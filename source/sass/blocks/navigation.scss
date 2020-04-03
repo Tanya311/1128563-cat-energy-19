@@ -1,0 +1,37 @@
+.navigation {
+
+}
+
+.site-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-list__item:nth-child(1) {
+  border-top: 1px solid #cdcdcd;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid #68b738;
+  }
+}

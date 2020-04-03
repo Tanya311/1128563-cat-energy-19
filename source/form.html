@@ -14,14 +14,14 @@
         <button class="navigation__toggle" type="button">Открыть меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
+              <a class="site-list__link site-list__link--active" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -36,73 +36,73 @@
           программу питания для вашего кота
         </p>
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset form__fieldset--data">
-            <ul class="pet-data__list">
-              <li class="pet-data__item">
-                <label class="pet-data__label" for="name">Имя:*</label>
-                <input class="pet-data__input pet-data__input--name" type="text" id="name" name="name" placeholder="Барсик" required>
+          <fieldset class="form__fieldset form__fieldset--pet-data">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name">Имя:*</label>
+                <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Барсик" required>
               </li>
-              <li class="pet-data__item">
-                <label class="pet-data__label" for="weight">Вес (кг):*</label>
-                <input class="pet-data__input pet-data__input--weight" type="text" id="weight" name="weight" placeholder="7" required>
+              <li class="form__item">
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input class="pet-data__input form__input--weight" type="text" id="weight" name="weight" placeholder="7" required>
               </li>
-              <li class="pet-data__item">
-                <label class="pet-data__label" for="age">Возраст (лет):</label>
-                <input class="pet-data__input pet-data__input--age" type="text" id="age" name="age" placeholder="7">
+              <li class="form__item">
+                <label class="form__label" for="age">Возраст (лет):</label>
+                <input class="form__input form__input--age" type="text" id="age" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--program-check">
-            <ul class="program-check__list">
-              <li class="program-check__item">
-                <input class="program-check__input" type="checkbox" id="loss" name="loss" checked>
-                <label class="program-check__label" for="loss">Похудение</label>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="loss" name="loss" checked>
+                <label class="form__label form__label--program-check" for="loss">Похудение</label>
               </li>
-              <li class="program-check__item">
-                <input class="program-check__input" type="checkbox" id="set" name="set">
-                <label class="program-check__label" for="set">Набор массы</label>
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="set" name="set">
+                <label class="form__label form__label--program-check" for="set">Набор массы</label>
               </li>
-              <li class="program-check__item">
-                <input class="program-check__input" type="checkbox" id="other" name="other">
-                <label class="program-check__label" for="other">Не знаю (Нужен ваш совет)</label>
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="other" name="other">
+                <label class="form__label form__label--program-check" for="other">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--owner">
-            <legend class="contacts-owner__title">Контактные данные (владельца кота)</legend>
-            <ul class="contacts-owner__list">
-              <li class="contacts-owner__item">
-                <label class="contacts-owner__label" for="email">E-mail:*</label>
-                <input class="contacts-owner__input contacts-owner__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="email">E-mail:*</label>
+                <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
-              <li>
-                <label class="contacts-owner__label" for="telephone">Телефон:*</label>
-                <input class="contacts-owner__input contacts-owner__input--tel" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90" required>
+              <li li class="form__item">
+                <label class="form__label" for="telephone">Телефон:*</label>
+                <input class="form__input form__input--tel" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--comment">
-            <legend class="comment__title">Комментарий</legend>
-            <textarea class="comment__text" rows="6" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <legend class="form__fieldset-title">Комментарий</legend>
+            <textarea class="form__comment-text" rows="6" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--additional-data">
-            <legend class="additional-data__title">Дополнительно</legend>
-            <ul class="additional-data__list">
-              <li class="additional-data__item">
-                <input class="additional-data__input" type="checkbox" id="sugar" name="sugar" checked>
-                <label class="additional-data__label" for="sugar">Сахарозаменитель</label>
+          <fieldset class="form__fieldset form__fieldset--additional">
+            <legend class="form__fieldset-title">Дополнительно</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="sugar" name="sugar" checked>
+                <label class="form__label form__label--additional" for="sugar">Сахарозаменитель</label>
               </li>
-              <li>
-                <input class="additional-data__input" type="checkbox" id="water" name="water">
-                <label class="additional-data__label" for="water">Питьевая вода</label>
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="water" name="water">
+                <label class="form__label form__label--additional" for="water">Питьевая вода</label>
               </li>
-              <li>
-                <input class="additional-data__input" type="checkbox" id="milk" name="milk">
-                <label class="additional-data__label" for="milk">Молоко</label>
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="milk" name="milk">
+                <label class="form__label form__label--additional" for="milk">Молоко</label>
               </li>
-              <li>
-                <input class="additional-data__input" type="checkbox" id="vitamins" name="vitamins">
-                <label class="additional-data__label" for="vitamins">Витамины</label>
+              <li class="form__item">
+                <input class="form__input-check" type="checkbox" id="vitamins" name="vitamins">
+                <label class="form__label form__label--additional" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
