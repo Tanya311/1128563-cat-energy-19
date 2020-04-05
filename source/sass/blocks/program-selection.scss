@@ -63,7 +63,7 @@
 
 .form__input::-webkit-input-placeholder,
 .form__comment-text::-webkit-input-placeholder {
-  font-family: "Oswald", sans-serif;
+  font-family: $base-font-family;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -76,7 +76,7 @@
 
 .form__input::-moz-placeholder,
 .form__comment-text::-webkit-input-placeholder {
-  font-family: "Oswald", sans-serif;
+  font-family: $base-font-family;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -89,7 +89,7 @@
 
 .form__input::-ms-input-placeholder,
 .form__comment-text::-webkit-input-placeholder {
-  font-family: "Oswald", sans-serif;
+  font-family: $base-font-family;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -101,7 +101,7 @@
 }
 
 .form__required-fields {
-  font-family: "Arial", sans-serif;
+  font-family: $base-font-family;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;

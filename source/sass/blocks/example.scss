@@ -17,7 +17,7 @@
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  font-family: $any-font-family;
   font-size: 14px;
   color: #444444;
   line-height: 1.29;
@@ -62,7 +62,7 @@
 
   margin: 0;
 
-  font-family: "ArialMT", sans-serif;
+  font-family: $any-font-family;
   font-size: 12px;
   line-height: 1em;
   color: #444444;
