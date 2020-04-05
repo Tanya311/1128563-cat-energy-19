@@ -30,13 +30,16 @@
   text-transform: uppercase;
 }
 
+.product-card__details {
+  width: 142px;
+}
+
 .product-card__details-name {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.33;
   color: #444444;
-  padding-right: 54px;
 }
 
 .product-card__details-value {
@@ -45,6 +48,7 @@
   font-weight: normal;
   line-height: 1.33;
   color: #444444;
+  text-align: right;
 }
 
 

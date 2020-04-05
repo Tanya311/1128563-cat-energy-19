@@ -1,0 +1,44 @@
+.additional-products {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.additional-products__title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #111111;
+}
+
+.additional-products__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.additional-card {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 17px;
+}
+
+.additional-card__title {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.additional-card__details {
+  width: 283px;
+  margin-bottom: 14px;
+}
+
+.additional-card__quantity,
+.additional-card__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #444444;
+}
+
+.additional-card__price {
+  text-align: right;
+}
