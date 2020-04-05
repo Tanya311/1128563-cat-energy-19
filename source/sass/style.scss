@@ -1,3 +1,6 @@
+$base-font-family: "Oswald", "Arial", sans-serif;
+$any-font-family: "Arial", sans-serif;
+
 @import "blocks/font.scss";
 @import "blocks/body.scss";
 @import "blocks/visually-hidden.scss";
@@ -17,5 +20,3 @@
 @import "blocks/special-offer.scss";
 //form page
 @import "blocks/program-selection.scss";
-
-
