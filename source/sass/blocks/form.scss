@@ -15,9 +15,9 @@
   padding-right: 0;
 }
 
-.form__fieldset:nth-child(1),
-.form__fieldset:nth-child(2) {
-  border-bottom: 1px solid #ededed;
+.form__fieldset--pet-data,
+.form__fieldset--program-check {
+  border-bottom: 1px solid $border-color;
 }
 
 .form__label {

@@ -16,7 +16,7 @@
 }
 
 .additional-card {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-color;
   padding-bottom: 17px;
 }
 
@@ -35,7 +35,7 @@
 
 .additional-card__quantity,
 .additional-card__price {
-  font-family: $any-font-family;
+  font-family: $font-secondary;
   font-size: 14px;
   color: $color-grey;
 }
