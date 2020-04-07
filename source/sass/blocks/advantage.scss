@@ -54,3 +54,31 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    @include width-block(auto);
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .advantage__item {
+    padding-top: 80px;
+    width: 230px;
+    padding-left: 0;
+    padding-right: 30px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+
+    }
+  }
+
+}
