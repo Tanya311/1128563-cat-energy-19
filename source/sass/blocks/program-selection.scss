@@ -1,4 +1,5 @@
 .program-selection {
+  @include width-block(320px);
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;

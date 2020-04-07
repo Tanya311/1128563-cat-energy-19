@@ -11,3 +11,9 @@ $bg-primary: #ffffff;
 $bg-secondary: #f2f2f2;
 
 $border-color: #ededed;
+
+@mixin width-block($width) {
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
