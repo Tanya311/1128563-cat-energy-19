@@ -1,11 +1,10 @@
 .button {
   display: inline-block;
   width: 280px;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  padding-top: 14px 0 11px;
   text-decoration: none;
   font-size: 14px;
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   text-align: center;
   background-color: #68b738;
@@ -21,6 +20,6 @@
 
   &--more {
     background-color: #f2f2f2;
-    color: #444444;
+    color: $color-grey;
   }
 }

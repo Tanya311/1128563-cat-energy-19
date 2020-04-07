@@ -1,45 +1,13 @@
-.additional-products {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left;
-}
+$font-primary: "Oswald", "Arial", sans-serif;
+$font-secondary: "Arial", sans-serif;
 
-.additional-products__title {
-  font-size: 24px;
-  font-weight: normal;
-  color: #111111;
-}
 
-.additional-products__list {
-  list-style: none;
-  padding-left: 0;
-}
+$color-grey: #444444;
+$color-dark: #111111;
+$color-white: #ffffff;
+$color-base: #222222;
 
-.additional-card {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 17px;
-}
+$bg-primary: #ffffff;
+$bg-secondary: #f2f2f2;
 
-.additional-card__title {
-  font-size: 16px;
-  font-weight: normal;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.additional-card__details {
-  width: 280px;
-  border-spacing: 0;
-  margin-bottom: 14px;
-}
-
-.additional-card__quantity,
-.additional-card__price {
-  font-family: $any-font-family;
-  font-size: 14px;
-  color: #444444;
-}
-
-.additional-card__price {
-  text-align: right;
-}
+$border-color: #ededed;
