@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.contacts__description {
+  width: 123px;
+  color: #111111;
+  text-transform: uppercase;
+  line-height: 1.25em;
+}
+
+.contacts__address {
+  width: 140px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43em;
+}

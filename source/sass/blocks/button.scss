@@ -16,7 +16,11 @@
   }
 
   &:active {
-    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--more {
+    background-color: #f2f2f2;
+    color: #444444;
   }
 }

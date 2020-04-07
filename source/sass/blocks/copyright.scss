@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: $any-font-family;
+}
+
+.copyright__link path {
+  fill: #666666;
+}
