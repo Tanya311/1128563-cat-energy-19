@@ -4,3 +4,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    padding-left: 110px;
+  }
+
+}

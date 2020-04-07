@@ -4,6 +4,7 @@
   padding-right: 20px;
 }
 
+
 .program__weight {
   margin-top: 20px;
   padding: 39px 20px 20px;
@@ -17,6 +18,7 @@
   font-size: 24px;
   margin-left: 72px;
   position: relative;
+  font-weight: normal;
 
   &::before {
     content: "";
@@ -81,4 +83,125 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    @include width-block(auto);
+  }
+
+  .program__weight {
+    margin-top: 20px;
+    padding: 39px 380px 20px 20px;
+    position: relative;
+  }
+
+  .program__title {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+    margin-left: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -64px;
+      left: 351px;
+
+      width: 200px;
+      height: 200px;
+      background-color: #68b738;
+
+      border-radius: 50%;
+    }
+  }
+
+  .program__title--loss::after {
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 386px;
+    width: 141px;
+    height: 194px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  .program__title--set::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 308px;
+    width: 268px;
+    height: 113px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .program {
+    @include width-block(auto);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__weight {
+    margin-right: 20px;
+    padding: 39px 20px 20px;
+    background-color: $bg-secondary;
+    text-align: left;
+    position: relative;
+  }
+
+  .program__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 72px;
+    position: relative;
+    font-weight: normal;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -18px;
+      left: -67px;
+
+      width: 50px;
+      height: 51px;
+      background-color: #68b738;
+
+      border-radius: 50%;
+    }
+  }
+
+  .program__title--loss::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: -57px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  .program__title--set::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -80px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+
+
 }

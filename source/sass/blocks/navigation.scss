@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    flex-grow: 1;
+  }
+}

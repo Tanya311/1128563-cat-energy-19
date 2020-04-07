@@ -13,6 +13,7 @@
   text-align: center;
 }
 
+
 .promo__title {
   font-size: 36px;
   line-height: 1em;
@@ -32,4 +33,60 @@
   margin-right: auto;
   margin-bottom: 3px;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: auto;
+    margin-left: 90px;
+    background-image: none;
+    position: relative;
+    text-align: left;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    font-weight: normal;
+    color: $color-dark;
+    margin-bottom: 33px;
+    width: 415px;
+  }
+
+  .promo__slogan {
+    color: $color-dark;
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+
+  .promo__image {
+    margin-top: -20px;
+  }
+
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo {
+    @include width-block(auto);
+    background-image: none;
+    display: flex;
+    margin-bottom: 300px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    font-weight: normal;
+    color: $color-dark;
+  }
+
+  .promo-wrapper {
+    padding-top: 61px;
+    width: 400px;
+  }
+
+  .promo__image {
+    margin-left: 30px;
+  }
+
 }

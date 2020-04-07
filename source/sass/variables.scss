@@ -12,6 +12,10 @@ $bg-secondary: #f2f2f2;
 
 $border-color: #ededed;
 
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+
 @mixin width-block($width) {
   width: $width;
   margin-left: auto;

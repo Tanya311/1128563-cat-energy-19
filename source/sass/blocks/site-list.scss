@@ -9,10 +9,6 @@
   padding-bottom: 24px;
 }
 
-.site-list__item:first-child {
-  border-top: 1px solid #cdcdcd;
-}
-
 .site-list__link {
   text-decoration: none;
   color: $color-dark;
@@ -30,4 +26,45 @@
   &--active {
     border-bottom: 2px solid #68b738;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 35px;
+  }
+
+  .site-list__item:first-child {
+    border: none;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
 }
