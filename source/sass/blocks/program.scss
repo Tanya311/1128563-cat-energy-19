@@ -18,13 +18,14 @@
   text-transform: uppercase;
   font-size: 24px;
   margin-left: 72px;
+  position: relative;
 
   &::before {
     content: "";
 
     position: absolute;
-    top: 16%;
-    left: 8%;
+    top: -18px;
+    left: -67px;
 
     width: 50px;
     height: 51px;
@@ -37,25 +38,23 @@
 .program__title--loss::after {
   content: "";
   position: absolute;
-  top: 16%;
-  left: 11%;
+  top: -19px;
+  left: -57px;
   width: 35px;
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .program__title--set::after {
   content: "";
   position: absolute;
-  top: 20%;
-  left: 4%;
+  top: -7px;
+  left: -80px;
   width: 67px;
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .program__description {
@@ -76,7 +75,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     left: 115px;
     width: 25px;
     height: 12px;
