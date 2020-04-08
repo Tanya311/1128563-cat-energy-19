@@ -26,3 +26,12 @@
     color: $color-grey;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    margin-left: 0;
+    margin-right: 0;
+    width: 249px;
+  }
+}

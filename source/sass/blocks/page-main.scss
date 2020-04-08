@@ -13,3 +13,12 @@
   color: $color-dark;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: auto;
+    padding-left: 31px;
+    margin-top: 65px;
+    margin-bottom: 156px;
+    font-size: 60px;
+  }
+}

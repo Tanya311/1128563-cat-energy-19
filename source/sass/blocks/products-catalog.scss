@@ -36,7 +36,8 @@
   border-spacing: 0;
 }
 
-.product-card__details-name {
+.product-card__details-name,
+.product-card__details-value {
   font-family: $font-secondary;
   font-size: 12px;
   font-weight: normal;
@@ -45,14 +46,8 @@
 }
 
 .product-card__details-value {
-  font-family: $font-secondary;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1.33;
-  color: $color-grey;
   text-align: right;
 }
-
 
 .products__description {
   font-family: $font-secondary;
@@ -64,7 +59,85 @@
   color: $color-grey;
 }
 
-.button--more {
-  background-color: $bg-secondary;
-  color: $color-grey;
+
+@media (min-width: $tablet-width) {
+  .products-catalog {
+    @include width-block(auto);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .product-card__image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -64px;
+  }
+
+  .products-catalog__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: 324px;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 165px 37px 25px 38px;
+    background-color: $bg-secondary;
+    margin-bottom: 140px;
+    position: relative;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .product-card:last-child {
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+  }
+
+  .product-card__wrapper {
+    width: auto;
+  }
+
+  .product-card__title {
+    width: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .product-card__link {
+    font-size: 20px;
+  }
+
+  .product-card__details {
+    width: 249px;
+    margin-bottom: 33px;
+  }
+
+  .product-card__details-name,
+  .product-card__details-value {
+    height: 31px;
+    font-size: 16px;
+    border-bottom: 1px solid #cacaca;
+  }
+
+  .product-card__details-value {
+    text-align: right;
+  }
+
+  .products__description {
+    font-family: $font-secondary;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-grey;
+  }
 }
