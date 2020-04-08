@@ -37,11 +37,11 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: auto;
-    margin-left: 90px;
+    @include width-block(709px);
     background-image: none;
     position: relative;
     text-align: left;
+    padding-left: 110px;
   }
 
   .promo__title {
