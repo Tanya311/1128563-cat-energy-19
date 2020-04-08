@@ -15,3 +15,21 @@
   text-decoration: none;
   color: $color-dark;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: auto;
+    margin: 0;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    border: none;
+  }
+
+  .social__link {
+    text-decoration: none;
+    color: $color-dark;
+  }
+}

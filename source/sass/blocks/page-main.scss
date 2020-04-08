@@ -13,17 +13,3 @@
   color: $color-dark;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main {
-    padding-left: 30px;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .page-main {
-    width: 1140px;
-    padding-left: 110px;
-  }
-
-}

@@ -149,6 +149,8 @@
     @include width-block(auto);
     display: flex;
     justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .program__weight {

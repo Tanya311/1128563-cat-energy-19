@@ -20,3 +20,22 @@
   font-size: 14px;
   line-height: 1.43em;
 }
+
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include width-block(auto);
+    padding-left: 71px;
+    padding-right: 71px;
+
+  }
+
+  .contacts__description {
+    font-size: 20px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    font-size: 16px;
+  }
+}
