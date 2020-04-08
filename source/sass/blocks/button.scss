@@ -32,6 +32,13 @@
   .button {
     margin-left: 0;
     margin-right: 0;
-    width: 249px;
+    width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 245px;
+  }
+}
+
