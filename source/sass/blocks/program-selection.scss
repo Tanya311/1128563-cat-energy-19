@@ -15,9 +15,11 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    @include width-block(auto);
-    padding-left: 70px;
-    padding-right: 67px;
+    @include width-block(90%);
+    max-width: 900px;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
   }
 
   .program-selection__text {
@@ -28,7 +30,8 @@
 
 @media (min-width: $desktop-width) {
   .program-selection {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 1440px;
     padding-left: 113px;
     padding-right: 110px;
   }

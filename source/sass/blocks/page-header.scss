@@ -7,17 +7,24 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    @include width-block(90%);
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    padding-left: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    @include width-block(90%);
+    max-width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
   }
 }
+
+

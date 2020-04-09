@@ -160,11 +160,14 @@
   .form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__list {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     &--additional {
       display: flex;
@@ -177,21 +180,21 @@
     margin-bottom: 14px;
     display: flex;
     align-items: center;
-    width: 570px;
+    width: 100%;
 
     &--additional {
       width: 25%;
       margin-bottom: 54px;
     }
 
-    &--owner:first-child {
-      margin-right: 80px;
+    &--owner {
+      width: 40%;
     }
   }
 
   .form__fieldset--pet-data,
   .form__fieldset--program-check {
-    width: 570px;
+    width: 40%;
   }
 
   .form__fieldset--pet-data {

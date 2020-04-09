@@ -1,4 +1,8 @@
 @media (min-width: $tablet-width) {
+  .navigation {
+    flex-grow: 1;
+  }
+
   .navigation__toggle {
     display: none;
   }

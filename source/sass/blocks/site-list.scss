@@ -31,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: flex-end;
   }
 
   .site-list__item {
@@ -38,6 +39,10 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 35px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 0;
   }
 
   .site-list__item:first-child {
