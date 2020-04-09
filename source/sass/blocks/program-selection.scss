@@ -11,3 +11,31 @@
   color: $color-dark;
   text-transform: uppercase;
 }
+
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    @include width-block(auto);
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  .program-selection__text {
+    width: 330px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    @include width-block(auto);
+    padding-left: 113px;
+    padding-right: 110px;
+  }
+
+  .program-selection__text {
+    width: 330px;
+    font-size: 20px;
+  }
+}
+
