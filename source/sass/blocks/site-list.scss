@@ -43,9 +43,7 @@
   .site-list__item:first-child {
     border: none;
   }
-
 }
-
 
 @media (min-width: $desktop-width) {
   .site-list__link--bg-green {
@@ -61,10 +59,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
 
-    &--active {
+  .site-list__link {
+    &--active-bg-green {
       border-bottom: 2px solid #ffffff;
     }
   }
-
 }
