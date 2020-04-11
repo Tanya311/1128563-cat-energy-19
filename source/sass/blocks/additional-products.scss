@@ -47,7 +47,8 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 900px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -91,20 +92,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-products {
+    @include width-block(90%);
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .additional-products__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .additional-products__list {
-    width: 100%;
     border-left: none;
     border-right: none;
-    margin-right: 80px;
+    margin-right: 8%;
+    flex-grow: 1;
   }
 
   .additional-card {
-    padding: 15px 38px 15px 37px;
+    padding: 15px 0 15px;
     align-items: center;
   }
 

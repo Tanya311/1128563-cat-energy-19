@@ -62,7 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .products-catalog {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 900px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -75,8 +76,6 @@
   }
 
   .products-catalog__list {
-    list-style: none;
-    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -101,7 +100,7 @@
   }
 
   .product-card__wrapper {
-    width: auto;
+    width: 100%;
   }
 
   .product-card__title {
@@ -139,5 +138,13 @@
     margin-left: auto;
     margin-right: auto;
     color: $color-grey;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .products-catalog {
+    @include width-block(90%);
+    max-width: 1440px;
   }
 }
