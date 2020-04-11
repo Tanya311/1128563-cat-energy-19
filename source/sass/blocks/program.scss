@@ -87,7 +87,10 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .program__weight {
@@ -144,7 +147,8 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding-left: 110px;
@@ -152,7 +156,7 @@
   }
 
   .program__weight {
-    margin-right: 20px;
+    width: 40%;
     padding: 39px 20px 20px;
     background-color: $bg-secondary;
     text-align: left;

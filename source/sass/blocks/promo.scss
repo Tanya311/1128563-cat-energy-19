@@ -37,11 +37,13 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    @include width-block(709px);
+    @include width-block(90%);
+    max-width: 900px;
     background-image: none;
     position: relative;
     text-align: left;
     padding-left: 110px;
+    padding-right: 30px;
   }
 
   .promo__title {
@@ -66,11 +68,13 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    @include width-block(auto);
+    @include width-block(90%);
+    max-width: 1440px;
     min-height: 600px;
     margin-top: -75px;
     padding-top: 151px;
     padding-left: 110px;
+    padding-right: 110px;
     display: flex;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -92,5 +96,4 @@
   .promo__image {
     margin-left: 30px;
   }
-
 }
