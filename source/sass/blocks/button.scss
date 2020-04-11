@@ -13,6 +13,7 @@
   border: none;
   z-index: 2;
   font-family: $font-primary;
+  cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
@@ -35,12 +36,24 @@
     margin-right: 0;
     width: 100%;
     font-size: 20px;
+
+    &--promo {
+      width: 245px;
+    }
+
+    &--form {
+      width: 283px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .button {
     width: 245px;
+
+    &--form {
+      width: 568px;
+    }
   }
 }
 
