@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 34px;
+}
+
 .form__list {
   list-style: none;
   padding-left: 0;
@@ -76,6 +80,7 @@
   .form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 72px;
   }
 
   .form__list {
@@ -152,6 +157,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 82px;
   }
 
   .form__list {

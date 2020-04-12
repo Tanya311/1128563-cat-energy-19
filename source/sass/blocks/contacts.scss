@@ -1,10 +1,18 @@
 .contacts {
+  @include width-block(auto);
+  background-color: $bg-primary;
+
+  &--other-page {
+    background-color: $bg-secondary;
+  }
+}
+
+.contacts__wrapper {
   @include width-block(320px);
   display: flex;
   justify-content: space-between;
   padding: 15px 20px 0;
   text-align: left;
-  background-color: $bg-primary;
 }
 
 .contacts__description {
@@ -21,10 +29,10 @@
   line-height: 1.43em;
 }
 
-
 @media (min-width: $tablet-width) {
-  .contacts {
-    @include width-block(auto);
+  .contacts__wrapper {
+    @include width-block(90%);
+    max-width: 900px;
     padding-left: 71px;
     padding-right: 71px;
   }
@@ -36,5 +44,23 @@
   .contacts__address {
     width: 160px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    width: 570px;
+    left: 40px;
+    top: 95px;
+    padding: 66px 90px 59px 76px;
+    background-color: $bg-primary;
+    box-sizing: border-box;
+  }
+
+  .contacts__wrapper {
+    @include width-block(100%);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
