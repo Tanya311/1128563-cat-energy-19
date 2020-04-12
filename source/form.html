@@ -71,11 +71,11 @@
           <fieldset class="form__fieldset form__fieldset--owner">
             <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
             <ul class="form__list">
-              <li class="form__item">
+              <li class="form__item form__item--owner">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
-              <li li class="form__item">
+              <li li class="form__item form__item--owner">
                 <label class="form__label" for="telephone">Телефон:*</label>
                 <input class="form__input form__input--tel" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90" required>
               </li>
@@ -83,41 +83,43 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="form__fieldset-title">Комментарий</legend>
-            <textarea class="form__comment-text" rows="9" cols="34" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--additional">
             <legend class="form__fieldset-title">Дополнительно</legend>
-            <ul class="form__list">
-              <li class="form__item">
+            <ul class="form__list form__list--additional">
+              <li class="form__item form__item--additional">
                 <input class="form__input-check" type="checkbox" id="sugar" name="sugar" checked>
                 <label class="form__label form__label--additional" for="sugar">Сахарозаменитель</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--additional">
                 <input class="form__input-check" type="checkbox" id="water" name="water">
                 <label class="form__label form__label--additional" for="water">Питьевая вода</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--additional">
                 <input class="form__input-check" type="checkbox" id="milk" name="milk">
                 <label class="form__label form__label--additional" for="milk">Молоко</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--additional">
                 <input class="form__input-check" type="checkbox" id="vitamins" name="vitamins">
                 <label class="form__label form__label--additional" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button form__button" type="submit">Отправить заявку</button>
+          <button class="button button--form" type="submit">Отправить заявку</button>
           <p class="form__required-fields">* — Обязательные поля</p>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <div class="page-footer__contacts contacts contacts--other-page">
+        <div class="contacts__wrapper">
+          <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="map">
         <img src="img/bg-map-mobile@1x.png" width="320" height="400"  alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">

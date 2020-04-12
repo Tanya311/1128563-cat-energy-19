@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,13 +16,13 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="#">Главная</a>
+              <a class="site-list__link site-list__link--active site-list__link--bg-green site-list__link--active-bg-green" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link site-list__link--bg-green" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link site-list__link--bg-green" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -32,15 +33,17 @@
       <h1 class="visually-hidden">Интернет-магазин «Кэт энерджи» - функциональное питание для котов</h1>
 
       <section class="promo">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <div class="promo-wrapper">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <a class="button button--promo" href="form.html">Подобрать программу</a>
+        </div>
         <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Банка питания Кэт энерджи со вкусом курицы">
-        <a class="button promo__button" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="program">
         <h2 class="visually-hidden">Программы питания</h2>
-        <article class="program__weight program__weight">
+        <article class="program__weight">
           <h3 class="program__title program__title--loss">Похудение</h3>
           <p class="program__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -69,44 +72,53 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__stats-wrapper">
-          <div class="example__stats stats">
-            <p class="stats__value">5 кг</p>
-            <p class="stats__name">снижение веса</p>
-          </div>
-          <div class="example__stats stats">
-            <p class="stats__value">60 дней</p>
-            <p class="stats__name">затрачено времени</p>
-          </div>
-        </div>
-        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-        <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота Бориса">
-        <div class="example__slider slider">
-          <span class="slider__label slider__label--before">Было</span>
-          <div class="slider__range-controls range-controls">
-            <div class="range-controls__scale">
-              <div class="range-controls__toggle">
-                <span class="visually-hidden">тумблер</span>
+        <div class="example__wrapper">
+          <div>
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="example__stats-wrapper">
+              <div class="example__stats stats">
+                <p class="stats__value">5 кг</p>
+                <p class="stats__name">снижение веса</p>
               </div>
+              <div class="example__stats stats">
+                <p class="stats__value">60 дней</p>
+                <p class="stats__name">затрачено времени</p>
+              </div>
+              <p class="example__cost">Затраты на питание: </p>
+              <p class="example__cost">15 000 руб.</p>
             </div>
           </div>
-          <span class="slider__label slider__label--after">Стало</span>
-        </div>
-      </section>
+          <div class="example__img-wrapper">
+            <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота Бориса">
+            <div class="example__slider slider">
+              <span class="example__slider-label slider__label--before">Было</span>
+              <div class="slider__range-controls range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__toggle">
+                    <span class="visually-hidden">тумблер</span>
+                  </div>
+                </div>
+              </div>
+              <span class="example__slider-label slider__label--after">Стало</span>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div class="contacts__wrapper">
+          <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="map">
         <img src="img/bg-map-mobile@1x.png" width="320" height="400"  alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">

@@ -1,22 +1,27 @@
-$base-font-family: "Oswald", "Arial", sans-serif;
-$any-font-family: "Arial", sans-serif;
 
+@import "variables.scss";
 @import "blocks/font.scss";
-@import "blocks/body.scss";
+@import "blocks/base.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/navigation.scss";
+@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 @import "blocks/button.scss";
 //index page
 @import "blocks/promo.scss";
 @import "blocks/program.scss";
 @import "blocks/advantage.scss";
 @import "blocks/example.scss";
+@import "blocks/stats.scss";
 //catalog page
 @import "blocks/products-catalog.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/special-offer.scss";
 //form page
 @import "blocks/program-selection.scss";
+@import "blocks/form.scss";

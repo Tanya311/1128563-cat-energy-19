@@ -1,16 +1,35 @@
 .page-main {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+
   text-align: left;
 }
 
 .page-main__title {
+  @include width-block(320px);
   margin-top: 31px;
   margin-bottom: 35px;
-  margin-left: 20px;
   font-size: 36px;
   font-weight: normal;
-  color: #111111;
+  color: $color-dark;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include width-block(90%);
+    max-width: 900px;
+    padding-left: 4%;
+    margin-top: 65px;
+    margin-bottom: 156px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    @include width-block(90%);
+    max-width: 1440px;
+
+    margin-top: 65px;
+    margin-bottom: 156px;
+    font-size: 60px;
+  }
+}

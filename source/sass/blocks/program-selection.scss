@@ -1,4 +1,5 @@
 .program-selection {
+  @include width-block(320px);
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
@@ -7,103 +8,36 @@
 .program-selection__text {
   font-size: 14px;
   line-height: 1.29;
-  color: #111111;
+  color: $color-dark;
   text-transform: uppercase;
 }
 
-.form__list {
-  list-style: none;
-  padding-left: 0;
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    @include width-block(90%);
+    max-width: 900px;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
+
+  .program-selection__text {
+    width: 330px;
+    font-size: 20px;
+  }
 }
 
-.form__item {
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-}
+@media (min-width: $desktop-width) {
+  .program-selection {
+    @include width-block(90%);
+    max-width: 1440px;
+    padding-left: 113px;
+    padding-right: 110px;
+  }
 
-.form__fieldset {
-  border: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.form__fieldset:nth-child(1),
-.form__fieldset:nth-child(2) {
-  border-bottom: 1px solid #ededed;
-}
-
-.form__label {
-  font-size: 16px;
-  line-height: 1.13em;
-  color: #222222;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.form__fieldset-title {
-  font-size: 24px;
-  line-height: 1em;
-  color: #111111;
-}
-
-.form__input {
-  margin-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 16px;
-
-  flex-grow: 1;
-}
-
-.form__comment-text {
-  padding-left: 16px;
-  margin-top: 20px;
-}
-
-.form__input::-webkit-input-placeholder,
-.form__comment-text::-webkit-input-placeholder {
-  font-family: $base-font-family;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: left;
-  vertical-align: middle;
-  color: #444444;
-  text-transform: uppercase;
-  letter-spacing: normal;
-}
-
-.form__input::-moz-placeholder,
-.form__comment-text::-webkit-input-placeholder {
-  font-family: $base-font-family;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: left;
-  vertical-align: middle;
-  color: #444444;
-  text-transform: uppercase;
-  letter-spacing: normal;
-}
-
-.form__input::-ms-input-placeholder,
-.form__comment-text::-webkit-input-placeholder {
-  font-family: $base-font-family;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: left;
-  vertical-align: middle;
-  color: #444444;
-  text-transform: uppercase;
-  letter-spacing: normal;
-}
-
-.form__required-fields {
-  font-family: $base-font-family;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  color: #444444;
+  .program-selection__text {
+    width: 330px;
+    font-size: 20px;
+  }
 }

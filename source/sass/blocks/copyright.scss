@@ -1,0 +1,36 @@
+.copyright {
+  @include width-block(320px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: $font-secondary;
+}
+
+.copyright__link path {
+  fill: #666666;
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright__text {
+    font-family: $font-secondary;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .copyright__link path {
+    fill: #666666;
+  }
+}

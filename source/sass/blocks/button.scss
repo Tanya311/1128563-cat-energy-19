@@ -1,22 +1,60 @@
 .button {
+  margin-left: 22px;
+  margin-right: 22px;
   display: inline-block;
   width: 280px;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  padding: 14px 0 11px;
   text-decoration: none;
   font-size: 14px;
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   text-align: center;
   background-color: #68b738;
   border: none;
+  z-index: 2;
+  font-family: $font-primary;
+  cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
   }
 
   &:active {
-    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--more {
+    background-color: #f2f2f2;
+    color: $color-grey;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 20px;
+
+    &--promo {
+      width: 245px;
+    }
+
+    &--form {
+      width: 283px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 245px;
+
+    &--form {
+      width: 568px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
