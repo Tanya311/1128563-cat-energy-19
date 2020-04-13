@@ -1,5 +1,5 @@
 .page-main {
-
+  width: 100%;
   text-align: left;
 }
 
@@ -14,9 +14,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
-    padding-left: 4%;
+    padding-left: 30px;
     margin-top: 65px;
     margin-bottom: 156px;
     font-size: 60px;
@@ -25,9 +25,9 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 1440px;
-
+    padding-left: 110px;
     margin-top: 65px;
     margin-bottom: 156px;
     font-size: 60px;

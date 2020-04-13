@@ -31,10 +31,10 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
-    padding-left: 71px;
-    padding-right: 71px;
+    padding-left: 31px;
+    padding-right: 31px;
   }
 
   .contacts__description {

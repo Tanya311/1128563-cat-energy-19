@@ -87,7 +87,7 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
     padding-left: 30px;
     padding-right: 30px;
@@ -147,7 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 1440px;
     display: flex;
     justify-content: space-between;

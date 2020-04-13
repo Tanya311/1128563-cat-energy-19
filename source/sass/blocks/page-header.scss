@@ -7,20 +7,20 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 29px;
+    padding-right: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
