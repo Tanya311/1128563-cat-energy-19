@@ -1,9 +1,8 @@
 .promo {
   width: auto;
-  background: linear-gradient(to top, #63a73a  0%, #63a73a  100%, #ffffff 30%, #ffffff 100%);
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: 100% 70%;
-  background-position: top center;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.5%, #ffffff 63.5%, #ffffff 100%);
+  background-position: top center, 0 0;
+  background-size: auto, auto;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
@@ -72,20 +71,20 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    @include width-block(80%);
-    max-width: 1440px;
-    min-height: 600px;
+    @include width-block(100%);
+    max-width: 100%;
+    min-height: 540px;
     margin-top: -75px;
     padding-top: 151px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff  0%, #ffffff  716px, #63a73a 716px, #63a73a 100%);
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 720px auto;
+    background-position: 716px 0, 0 0;
     z-index: -1;
   }
+
 
   .promo-wrapper {
     padding-top: 61px;
