@@ -4,9 +4,12 @@
   text-align: center;
 }
 
+.stats:first-child {
+  margin-right: 69px;
+}
+
 .stats__value {
-  padding: 13px;
-  padding-bottom: 17px;
+  padding: 13px 13px 17px 13px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   margin: 0;
@@ -14,8 +17,6 @@
   font-size: 24px;
   line-height: 1em;
   text-transform: uppercase;
-  letter-spacing: normal;
-  font-stretch: normal;
 }
 
 .stats__name {
@@ -44,30 +45,15 @@
   }
 
   .stats__value {
-    padding: 16px 31px 15px 30px;
-    padding-bottom: 17px;
+    padding: 16px 31px 17px 30px;
     border-radius: 4px;
     margin: 0;
 
     font-size: 30px;
-    line-height: 1em;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    font-stretch: normal;
   }
 
   .stats__name {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -15px;
-
-    margin: 0;
-
-    font-family: $font-secondary;
     font-size: 14px;
-    line-height: 1em;
-    color: $color-grey;
     background-color: $bg-primary;
   }
 }
@@ -78,7 +64,7 @@
   }
 
   .stats:first-child {
-    margin-right: 87px;
+    margin-right: 0;
   }
 
   .stats__name {

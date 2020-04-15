@@ -18,20 +18,22 @@
 }
 
 .example__description {
+  padding-right: 53px;
+  margin-bottom: 27px;
   font-family: $font-secondary;
   font-size: 14px;
   color: #444444;
-  line-height: 1.29;
 }
 
 .example__stats-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .example__cost {
-  margin-top: 30px;
+  margin-top: 38px;
+  margin-bottom: 44px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -46,16 +48,20 @@
   text-transform: uppercase;
 }
 
-
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f2f2f2 40%, #f2f2f2 60%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f2f2f2 50% #f2f2f2 100%);
   }
 
   .example__wrapper {
     @include width-block(80%);
     max-width: 900px;
-    padding: 51px 30px 70px;
+    padding: 51px 30px 75px;
+  }
+
+  .example__stats-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 90px;
   }
 
   .example__title {
@@ -63,8 +69,11 @@
   }
 
   .example__cost {
-    flex-grow: 1;
+    margin-left: auto;
+    margin-top: 13px;
+    margin-bottom: 0;
     text-align: right;
+    width: 189px;
     font-size: 20px;
   }
 
@@ -90,20 +99,26 @@
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
   }
 
+  .example__wrapper-description {
+    max-width: 432px;
+  }
+
   .example__wrapper {
     @include width-block(80%);
     max-width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
     display: flex;
+    justify-content: space-between;
   }
 
   .example__title {
     margin-bottom: 142px;
-    margin-top: 63px;
+    margin-top: 0;
   }
 
   .example__description {
+    padding-right: 0;
     width: auto;
     margin-bottom: 59px;
     font-size: 16px;
@@ -113,12 +128,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
-    max-width: 589px;
-  }
-
-  .example__wrapper-description {
-    width: 50%;
   }
 
   .example__image {
@@ -128,10 +137,11 @@
   }
 
   .example__cost {
+    width: 100%;
     text-align: left;
   }
 
-  .example__cost:last-child {
-    text-align: right;
+  .example__cost-number {
+    margin-left: 64px;
   }
 }
