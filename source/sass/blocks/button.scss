@@ -1,6 +1,4 @@
 .button {
-  margin-left: 22px;
-  margin-right: 22px;
   display: inline-block;
   width: 280px;
   padding: 14px 0 11px;
@@ -49,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .button {
-    width: 245px;
+    width: 100%;
 
     &--form {
       width: 568px;
