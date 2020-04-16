@@ -1,23 +1,17 @@
 .special-offer {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 37px auto 0;
   width: 100%;
-  min-height: 289px;
-  padding: 30px 61px 43px 60px;
+  padding: 190px 50px 43px 50px;
   box-sizing: border-box;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-color: rgb(58, 148, 30);
+  background-color: #70b447;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .special-offer__description {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 1.25;
@@ -27,7 +21,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 55px;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
     width: 56px;
@@ -40,35 +34,36 @@
   .special-offer {
     width: 100%;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    background-size: cover;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 91px;
+    background-size: contain;
+    padding: 75px 125px 79px 424px;
+    margin-top: 69px;
   }
 
   .special-offer__description {
     width: 160px;
+    text-align: left;
 
     &::before {
-      top: 94px;
-      left: 108px;
+      top: 65px;
+      left: 120px;
     }
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .special-offer {
-    width: 289px;
+    width: 245px;
+    margin: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 61px;
+    padding: 190px 43px 43px 43px;
   }
 
   .special-offer__description {
     width: 100%;
+    text-align: center;
 
     &::before {
       top: 55px;

@@ -2,6 +2,7 @@
   @include width-block(320px);
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 6px;
   text-align: left;
   margin-bottom: 35px;
 }
@@ -10,16 +11,20 @@
   font-size: 24px;
   font-weight: normal;
   color: $color-dark;
+  margin-bottom: 30px;
 }
 
 .additional-products__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  border-top: 1px solid;
 }
 
 .additional-card {
   border-bottom: 1px solid $border-color;
   padding-bottom: 17px;
+  padding-top: 11px;
 }
 
 .additional-card__title {
@@ -27,6 +32,8 @@
   font-weight: normal;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .additional-card__details {
@@ -58,6 +65,7 @@
   .additional-products__title {
     font-size: 36px;
     margin-bottom: 75px;
+    padding-left: 37px;
   }
 
   .additional-products__list {
@@ -71,25 +79,26 @@
     padding: 28px 38px 28px 37px;
   }
 
-  .additional-card:not(:last-child) {
-    border-bottom: 1px solid  #cdcdcd;
+  .additional-card:last-child {
+    border: none;
   }
 
   .additional-card__title {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     font-size: 20px;
-  }
-
-  .additional-card__details {
-    width: 280px;
-    border-spacing: 0;
-    margin-bottom: 14px;
   }
 
   .additional-card__quantity,
   .additional-card__price {
     font-size: 16px;
+  }
+
+  .additional-card__quantity {
+    text-align: right;
+  }
+
+  .additional-card__price {
+    width: 100px;
   }
 }
 
@@ -97,9 +106,13 @@
   .additional-products {
     @include width-block(90%);
     max-width: 1440px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 110px;
+    padding-right: 110px;
     margin-bottom: 86px;
+  }
+
+  .additional-products__title {
+    padding-left: 0;
   }
 
   .additional-products__wrapper {
@@ -117,7 +130,9 @@
 
   .additional-card {
     padding: 15px 0 15px;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .additional-card__title {
@@ -130,4 +145,9 @@
     border-spacing: 0;
     margin-bottom: 14px;
   }
+
+  .additional-card__quantity {
+    text-align: left;
+  }
+
 }
