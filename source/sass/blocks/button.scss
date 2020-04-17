@@ -13,6 +13,10 @@
   font-family: $font-primary;
   cursor: pointer;
 
+  &--form {
+    margin-left: 20px;
+  }
+
   &:hover {
     background-color: #5eaa2f;
   }
@@ -41,6 +45,8 @@
 
     &--form {
       width: 283px;
+      margin-left: 71px;
+      margin-right: 0;
     }
   }
 }
@@ -51,12 +57,13 @@
 
     &--form {
       width: 568px;
-      margin-left: 0;
+      margin-left: 110px;
       margin-right: 0;
     }
 
     &--additional {
-      width: 245px;
+      width: 27%;
+      max-width: 245px;
       margin: 0;
     }
   }

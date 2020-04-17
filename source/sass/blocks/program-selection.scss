@@ -1,11 +1,13 @@
 .program-selection {
   @include width-block(320px);
   text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 32px;
 }
 
 .program-selection__text {
+  width: 226px;
+  margin-top: 0;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 1.29;
   color: $color-dark;
@@ -15,16 +17,17 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
+    margin-top: 50px;
   }
 
   .program-selection__text {
     width: 330px;
     font-size: 20px;
+    padding-left: 72px;
+    line-height: 1.5;
   }
 }
 
@@ -32,12 +35,11 @@
   .program-selection {
     @include width-block(90%);
     max-width: 1440px;
-    padding-left: 113px;
-    padding-right: 110px;
   }
 
   .program-selection__text {
     width: 330px;
     font-size: 20px;
+    padding-left: 110px;
   }
 }

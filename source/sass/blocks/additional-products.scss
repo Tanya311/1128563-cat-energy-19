@@ -141,9 +141,14 @@
   }
 
   .additional-card__details {
-    width: 250px;
+    width: 33%;
+    max-width: 250px;
     border-spacing: 0;
     margin-bottom: 14px;
+  }
+
+  .additional-card__price {
+    width: 60px;
   }
 
   .additional-card__quantity {

@@ -6,7 +6,8 @@
 .page-main__title {
   @include width-block(320px);
   margin-top: 31px;
-  margin-bottom: 35px;
+  margin-bottom: 12px;
+  padding-left: 22px;
   font-size: 36px;
   font-weight: normal;
   color: $color-dark;
@@ -16,9 +17,9 @@
   .page-main__title {
     @include width-block(80%);
     max-width: 900px;
-    padding-left: 30px;
-    margin-top: 65px;
-    margin-bottom: 156px;
+    padding-left: 32px;
+    margin-top: 31px;
+    margin-bottom: 12px;
     font-size: 60px;
   }
 }
@@ -27,9 +28,9 @@
   .page-main__title {
     @include width-block(80%);
     max-width: 1440px;
-    padding-left: 110px;
+    padding-left: 113px;
     margin-top: 65px;
-    margin-bottom: 156px;
+    margin-bottom: 12px;
     font-size: 60px;
   }
 }
