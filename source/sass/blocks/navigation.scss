@@ -1,3 +1,43 @@
+@media (max-width: $mobile-width-only) {
+  .navigation__toggle {
+    position: absolute;
+    top: 22px;
+    right: 150px;
+    display: block;
+    width: 25px;
+    height: 19px;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 19px;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .navigation--closed .navigation__toggle::before {
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  .navigation--closed .site-list {
+    display: none;
+  }
+
+  .navigation--opened .navigation__toggle::before {
+    background: url("../img/icon-close.svg") no-repeat;
+  }
+
+  .navigation--opened .site-list {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .navigation {
     flex-grow: 1;
