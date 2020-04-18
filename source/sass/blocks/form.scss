@@ -210,7 +210,6 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 82px;
   }
 
@@ -218,19 +217,34 @@
     padding: 0 110px 0 110px;
     width: 100%;
 
+    &--pet-data {
+      padding-right: 0;
+      width: 47%;
+      box-sizing: border-box;
+    }
+
     &--program-check {
+      width: 47%;
+      box-sizing: border-box;
       padding-left: 0;
       border: none;
-      margin-bottom: 75px;
+      margin: 0 0 0 auto;
+    }
+
+    &--owner {
+      margin-top: 50px;
+      padding-top: 40px;
     }
 
     &--comment {
       margin-top: 48px;
       margin-bottom: 61px;
+      padding-top: 40px;
     }
 
     &--additional {
-      margin-bottom: 13px;
+      margin-bottom: 45px;
+      padding-top: 40px;
     }
   }
 
@@ -240,38 +254,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    &--program-check {
+      padding-top: 36px;
+      margin-bottom: 13px;
+    }
+
     &--additional {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 64px;
     }
   }
 
   .form__item {
-    margin-bottom: 14px;
+    margin-bottom: 17px;
     display: flex;
     align-items: center;
     width: 100%;
 
     &--additional {
-      width: 25%;
-      margin-bottom: 54px;
+      width: 20%;
     }
 
     &--owner {
-      width: 40%;
+      width: 47%;
     }
   }
 
-  .form__fieldset--pet-data,
-  .form__fieldset--program-check {
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-
   .form__required-fields {
-    font-size: 16px;
-    margin-left: 165px;
+    margin-left: 82px;
   }
 }
