@@ -8,6 +8,7 @@
     height: 19px;
     border: none;
     background: transparent;
+    outline: none;
 
     cursor: pointer;
 
@@ -34,6 +35,10 @@
   }
 
   .navigation--opened .site-list {
+    display: block;
+  }
+
+  .navigation--nojs .site-list {
     display: block;
   }
 }
