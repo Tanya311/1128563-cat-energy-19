@@ -43,11 +43,11 @@
     background-image: none;
     position: relative;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 50px 30px 260px;
   }
 
   .promo-wrapper {
+    padding: 0 0 0 90px;
     width: 100%;
   }
 
@@ -65,7 +65,11 @@
   }
 
   .promo__image {
+    position: absolute;
     margin-top: -20px;
+    bottom: 0;
+    left: 200px;
+    z-index: -1;
   }
 }
 
@@ -86,16 +90,16 @@
     z-index: -1;
   }
 
-
   .promo-wrapper {
-    padding-top: 61px;
-    padding-left: 193px;
-    width: 410px;
-    margin-left: 0;
-    margin-right: 0;
+    @include width-block(80%);
+    max-width: 1440px;
+    padding: 61px 110px 0 193px;
+
   }
 
   .promo__image {
-    margin-left: 30px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 }
