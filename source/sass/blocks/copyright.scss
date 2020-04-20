@@ -3,10 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .copyright__text {
   font-family: $font-secondary;
+  margin: 0;
 }
 
 .copyright__link path {

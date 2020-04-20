@@ -57,6 +57,7 @@
   .additional-products {
     @include width-block(90%);
     max-width: 900px;
+    min-width: 700px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 76px;
@@ -154,5 +155,4 @@
   .additional-card__quantity {
     text-align: left;
   }
-
 }

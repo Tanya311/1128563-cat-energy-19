@@ -5,13 +5,14 @@
   &--other-page {
     background-color: $bg-secondary;
   }
+  z-index: 4;
 }
 
 .contacts__wrapper {
   @include width-block(320px);
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px 0;
+  padding: 12px 18px 10px 20px;
   text-align: left;
 }
 
