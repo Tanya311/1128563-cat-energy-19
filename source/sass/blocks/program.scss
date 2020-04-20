@@ -148,6 +148,11 @@
 
   .program__catalog {
     font-size: 20px;
+
+    &::after {
+      top: 10px;
+      left: 130px;
+    }
   }
 }
 
