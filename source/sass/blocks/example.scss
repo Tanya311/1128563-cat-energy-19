@@ -112,8 +112,46 @@
     height: 500px;
   }
 
+  .slider__range-controls {
+    width: 428px;
+    height: 6px;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    border: none;
+    position: relative;
+  }
+
+  .slider__range-scale {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   .example__slider-label {
     font-size: 20px;
+    border-bottom: 1px dashed hsla(0, 0%, 0%, 0.23%);
   }
 }
 
