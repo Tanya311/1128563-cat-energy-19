@@ -23,6 +23,7 @@
   .page-header {
     @include width-block(80%);
     max-width: 1440px;
+    padding-top: 75px;
     padding-left: 110px;
     padding-right: 110px;
   }
