@@ -72,6 +72,10 @@
     display: block;
   }
 
+  .navigation--nojs .navigation__toggle::before {
+    display: none;
+  }
+
   .navigation--nojs .navigation__list {
     display: block;
   }
