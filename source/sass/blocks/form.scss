@@ -12,16 +12,20 @@
   margin-bottom: 9px;
   display: flex;
   align-items: center;
+  position: relative;
 
   &--additional {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 26px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 56px;
+    margin-bottom: 13px;
   }
 
   &--program-check {
-    margin-bottom: 25px;
-    padding-left: 26px;
+    margin-bottom: 13px;
+    padding-left: 68px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 
@@ -54,6 +58,52 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-right: 15px;
+
+  &--program-check::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    top: -1px;
+    left: 8px;
+  }
+
+  &--additional::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    top: -1px;
+    left: 0;
+  }
+}
+
+.form__input-check {
+  display: none;
+}
+
+.form__input-check--program-check:checked ~ .form__label--program-check::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #68b738;
+  top: 11px;
+  left: 20px;
+}
+
+.form__input-check--additional:checked ~ .form__label--additional::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  top: 11px;
+  left: 12px;
 }
 
 .form__fieldset-title {
