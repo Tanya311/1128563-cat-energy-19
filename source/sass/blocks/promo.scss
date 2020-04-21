@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.promo-wrapper {
+.promo__wrapper {
   @include width-block(320px);
   padding-top: 29px;
   padding-left: 20px;
@@ -46,7 +46,7 @@
     padding: 50px 30px 260px;
   }
 
-  .promo-wrapper {
+  .promo__wrapper {
     padding: 0 0 0 90px;
     width: 100%;
   }
@@ -85,7 +85,7 @@
     z-index: -1;
   }
 
-  .promo-wrapper {
+  .promo__wrapper {
     @include width-block(80%);
     max-width: 1440px;
     padding: 226px 110px 175px 193px;

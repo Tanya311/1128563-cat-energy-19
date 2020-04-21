@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-.slider__range-controls {
+.example__range-controls {
   width: 84px;
   height: 14px;
   padding: 3px 6px;
@@ -63,7 +63,7 @@
   border: 1px solid #cdcdcd;
 }
 
-.slider__range-scale {
+.example__range-scale {
   width: 35px;
   height: 6px;
   border-radius: 3px;
@@ -112,7 +112,7 @@
     height: 500px;
   }
 
-  .slider__range-controls {
+  .example__range-controls {
     width: 428px;
     height: 6px;
     padding: 3px 6px;
@@ -123,7 +123,7 @@
     position: relative;
   }
 
-  .slider__range-scale {
+  .example__range-scale {
     width: 34px;
     height: 34px;
     border-radius: 50%;
