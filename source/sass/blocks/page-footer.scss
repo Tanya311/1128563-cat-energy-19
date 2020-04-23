@@ -9,25 +9,36 @@
 }
 
 .page-footer__wrapper {
-  padding: 0 20px 30px;
+  padding: 30px 20px 30px;
 }
 
+.page-footer__map {
+  overflow: hidden;
+}
+
+.page-footer__map-img {
+  margin-top: -35px;
+}
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 30px;
   }
+
+  .page-footer__map-img {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     @include width-block(90%);
-    max-width: 1440px;
-    padding: 60px 110px;
+    max-width: 1220px;
+    padding: 60px 0;
   }
 }

@@ -4,8 +4,8 @@
 @import "blocks/base.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
+@import "blocks/logo.scss";
 @import "blocks/navigation.scss";
-@import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
@@ -20,7 +20,9 @@
 @import "blocks/stats.scss";
 //catalog page
 @import "blocks/products-catalog.scss";
+@import "blocks/product-card.scss";
 @import "blocks/additional-products.scss";
+@import "blocks/additional-card.scss";
 @import "blocks/special-offer.scss";
 //form page
 @import "blocks/program-selection.scss";

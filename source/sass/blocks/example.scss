@@ -7,31 +7,33 @@
 
 .example__wrapper {
   @include width-block(320px);
-  padding: 33px 20px 38px;
+  padding: 23px 20px 38px;
 }
 
 .example__title {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: normal;
 }
 
 .example__description {
+  padding-right: 14px;
+  margin-bottom: 24px;
   font-family: $font-secondary;
   font-size: 14px;
   color: #444444;
-  line-height: 1.29;
 }
 
 .example__stats-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .example__cost {
-  margin-top: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -39,23 +41,53 @@
 
 .example__image {
   vertical-align: middle;
-  margin-bottom: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.example__slider {
+  padding: 0 34px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.example__range-controls {
+  width: 84px;
+  height: 14px;
+  padding: 3px 6px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: $bg-primary;
+  border: 1px solid #cdcdcd;
+}
+
+.example__range-scale {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
 }
 
 .example__slider-label {
   text-transform: uppercase;
 }
 
-
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f2f2f2 40%, #f2f2f2 60%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f2f2f2 50% #f2f2f2 100%);
   }
 
   .example__wrapper {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
-    padding: 51px 30px 70px;
+    padding: 51px 30px 75px;
+  }
+
+  .example__stats-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 90px;
   }
 
   .example__title {
@@ -63,8 +95,11 @@
   }
 
   .example__cost {
-    flex-grow: 1;
+    margin-left: auto;
+    margin-top: 13px;
+    margin-bottom: 0;
     text-align: right;
+    width: 189px;
     font-size: 20px;
   }
 
@@ -77,8 +112,46 @@
     height: 500px;
   }
 
+  .example__range-controls {
+    width: 428px;
+    height: 6px;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    border: none;
+    position: relative;
+  }
+
+  .example__range-scale {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   .example__slider-label {
     font-size: 20px;
+    border-bottom: 1px dashed hsla(0, 0%, 0%, 0.23%);
   }
 }
 
@@ -90,20 +163,26 @@
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
   }
 
+  .example__wrapper-description {
+    max-width: 432px;
+  }
+
   .example__wrapper {
     @include width-block(90%);
-    max-width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
+    justify-content: space-between;
   }
 
   .example__title {
     margin-bottom: 142px;
-    margin-top: 63px;
+    margin-top: 0;
   }
 
   .example__description {
+    padding-right: 0;
     width: auto;
     margin-bottom: 59px;
     font-size: 16px;
@@ -113,23 +192,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 589px;
   }
 
   .example__image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 0;
     width: 636px;
     height: 500px;
   }
 
   .example__cost {
+    width: 100%;
     text-align: left;
   }
 
-  .example__cost:last-child {
-    text-align: right;
+  .example__cost-number {
+    margin-left: 64px;
+  }
+
+  .example__slider {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

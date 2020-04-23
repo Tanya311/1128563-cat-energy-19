@@ -1,11 +1,9 @@
 .button {
-  margin-left: 22px;
-  margin-right: 22px;
   display: inline-block;
   width: 280px;
-  padding: 14px 0 11px;
+  padding: 10px 0 9px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
@@ -14,6 +12,10 @@
   z-index: 2;
   font-family: $font-primary;
   cursor: pointer;
+
+  &--form {
+    margin-left: 20px;
+  }
 
   &:hover {
     background-color: #5eaa2f;
@@ -43,18 +45,30 @@
 
     &--form {
       width: 283px;
+      margin-left: 71px;
+      margin-right: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .button {
-    width: 245px;
+    width: 100%;
+
+    &--promo {
+      width: 245px;
+    }
 
     &--form {
       width: 568px;
       margin-left: 0;
       margin-right: 0;
+    }
+
+    &--additional {
+      width: 27%;
+      max-width: 245px;
+      margin: 0;
     }
   }
 }

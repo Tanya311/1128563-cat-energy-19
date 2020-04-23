@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,18 +11,18 @@
       <a class="logo" href="index.html">
         <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет магазина Кэт энерджи">
       </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">Открыть меню</button>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="#">Подбор программы</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -53,24 +54,24 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--program-check">
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="form__input-check" type="checkbox" id="loss" name="loss" checked>
+            <ul class="form__list form__list--program-check ">
+              <li class="form__item form__item--program-check">
+                <input class="form__input-check form__input-check--program-check" type="checkbox" id="loss" name="loss" checked>
                 <label class="form__label form__label--program-check" for="loss">Похудение</label>
               </li>
-              <li class="form__item">
-                <input class="form__input-check" type="checkbox" id="set" name="set">
+              <li class="form__item form__item--program-check">
+                <input class="form__input-check form__input-check--program-check" type="checkbox" id="set" name="set">
                 <label class="form__label form__label--program-check" for="set">Набор массы</label>
               </li>
-              <li class="form__item">
-                <input class="form__input-check" type="checkbox" id="other" name="other">
+              <li class="form__item form__item--program-check">
+                <input class="form__input-check form__input-check--program-check" type="checkbox" id="other" name="other">
                 <label class="form__label form__label--program-check" for="other">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--owner">
             <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--owner">
               <li class="form__item form__item--owner">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -89,19 +90,19 @@
             <legend class="form__fieldset-title">Дополнительно</legend>
             <ul class="form__list form__list--additional">
               <li class="form__item form__item--additional">
-                <input class="form__input-check" type="checkbox" id="sugar" name="sugar" checked>
+                <input class="form__input-check form__input-check--additional" type="checkbox" id="sugar" name="sugar" checked>
                 <label class="form__label form__label--additional" for="sugar">Сахарозаменитель</label>
               </li>
               <li class="form__item form__item--additional">
-                <input class="form__input-check" type="checkbox" id="water" name="water">
+                <input class="form__input-check form__input-check--additional" type="checkbox" id="water" name="water">
                 <label class="form__label form__label--additional" for="water">Питьевая вода</label>
               </li>
               <li class="form__item form__item--additional">
-                <input class="form__input-check" type="checkbox" id="milk" name="milk">
+                <input class="form__input-check form__input-check--additional" type="checkbox" id="milk" name="milk">
                 <label class="form__label form__label--additional" for="milk">Молоко</label>
               </li>
               <li class="form__item form__item--additional">
-                <input class="form__input-check" type="checkbox" id="vitamins" name="vitamins">
+                <input class="form__input-check form__input-check--additional" type="checkbox" id="vitamins" name="vitamins">
                 <label class="form__label form__label--additional" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -149,5 +150,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

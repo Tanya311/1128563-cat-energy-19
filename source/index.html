@@ -11,18 +11,18 @@
       <a class="logo" href="#">
         <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет магазина Кэт энерджи">
       </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">Открыть меню</button>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active site-list__link--bg-green site-list__link--active-bg-green" href="#">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active navigation__link--bg-green navigation__link--active-bg-green" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--bg-green" href="catalog.html">Каталог продукции</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--bg-green" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--bg-green" href="form.html">Подбор программы</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--bg-green" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -33,12 +33,12 @@
       <h1 class="visually-hidden">Интернет-магазин «Кэт энерджи» - функциональное питание для котов</h1>
 
       <section class="promo">
-        <div class="promo-wrapper">
+        <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Банка питания Кэт энерджи со вкусом курицы">
           <a class="button button--promo" href="form.html">Подобрать программу</a>
         </div>
-        <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Банка питания Кэт энерджи со вкусом курицы">
       </section>
 
       <section class="program">
@@ -64,16 +64,16 @@
       <section class="advantage">
         <h2 class="advantage__title">Как это работает</h2>
         <ul class="advantage__list">
-          <li class="advantage__item advantage__item--useful">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="advantage__item advantage__item--easy">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="advantage__item advantage__item--transition">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="advantage__item advantage__item--enjoy">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="advantage__item advantage__item--useful advantage__item--one">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="advantage__item advantage__item--easy advantage__item--two">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="advantage__item advantage__item--transition advantage__item--three">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantage__item advantage__item--enjoy advantage__item--four">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</li>
         </ul>
       </section>
 
       <section class="example">
         <div class="example__wrapper">
-          <div>
+          <div class="example__wrapper-description">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -89,22 +89,19 @@
                 <p class="stats__value">60 дней</p>
                 <p class="stats__name">затрачено времени</p>
               </div>
-              <p class="example__cost">Затраты на питание: </p>
-              <p class="example__cost">15 000 руб.</p>
+              <p class="example__cost">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
             </div>
           </div>
           <div class="example__img-wrapper">
             <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота Бориса">
-            <div class="example__slider slider">
-              <span class="example__slider-label slider__label--before">Было</span>
-              <div class="slider__range-controls range-controls">
-                <div class="range-controls__scale">
-                  <div class="range-controls__toggle">
-                    <span class="visually-hidden">тумблер</span>
-                  </div>
+            <div class="example__slider">
+              <span class="example__slider-label">Было</span>
+              <div class="example__range-controls">
+                <div class="example__range-scale">
+                  <span class="visually-hidden">тумблер</span>
                 </div>
               </div>
-              <span class="example__slider-label slider__label--after">Стало</span>
+              <span class="example__slider-label">Стало</span>
             </div>
           </div>
         </section>
@@ -114,14 +111,14 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
         <div class="contacts__wrapper">
-          <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
       </div>
-      <div class="map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="400"  alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <div class="page-footer__map">
+        <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400"  alt="Наш офис расположен по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
@@ -148,5 +145,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

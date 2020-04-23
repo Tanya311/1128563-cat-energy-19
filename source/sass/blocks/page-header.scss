@@ -1,28 +1,30 @@
 .page-header {
-  padding-left: 19px;
-  padding-right: 19px;
+  padding-top: 11px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include width-block(90%);
+    @include width-block(80%);
     max-width: 900px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 24px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     @include width-block(90%);
-    max-width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: 1220px;
+    padding-top: 75px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
