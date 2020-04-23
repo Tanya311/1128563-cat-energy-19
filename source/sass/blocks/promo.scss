@@ -86,10 +86,9 @@
   }
 
   .promo__wrapper {
-    @include width-block(80%);
-    max-width: 1440px;
-    padding: 226px 110px 175px 193px;
-    position: relative;
+    @include width-block(90%);
+    max-width: 1220px;
+    padding: 226px 0 172px 83px;
     z-index: 5;
 
     &::after {

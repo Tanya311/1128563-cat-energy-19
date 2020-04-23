@@ -37,8 +37,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    @include width-block(80%);
-    max-width: 1440px;
-    padding: 60px 110px;
+    @include width-block(90%);
+    max-width: 1220px;
+    padding: 60px 0;
   }
 }

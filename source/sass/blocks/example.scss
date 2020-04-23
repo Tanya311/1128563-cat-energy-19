@@ -168,10 +168,10 @@
   }
 
   .example__wrapper {
-    @include width-block(80%);
-    max-width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    @include width-block(90%);
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -208,4 +208,13 @@
   .example__cost-number {
     margin-left: 64px;
   }
+
+  .example__slider {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }

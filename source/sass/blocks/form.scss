@@ -264,7 +264,7 @@
   }
 
   .form__fieldset {
-    padding: 0 110px 0 110px;
+    padding: 0;
     width: 100%;
 
     &--pet-data {
@@ -313,6 +313,10 @@
       display: flex;
       flex-wrap: wrap;
     }
+  }
+
+  .form__fieldset-title {
+    margin-left: 0;
   }
 
   .form__item {

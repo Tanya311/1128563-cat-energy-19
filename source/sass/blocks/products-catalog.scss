@@ -30,9 +30,9 @@
 @media (min-width: $desktop-width) {
   .products-catalog {
     @include width-block(90%);
-    max-width: 1440px;
-    padding-left: 110px;
-    padding-right: 110px;
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 0;
   }
 }

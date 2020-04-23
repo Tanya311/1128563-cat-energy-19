@@ -21,10 +21,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include width-block(80%);
-    max-width: 1440px;
+    @include width-block(90%);
+    max-width: 1220px;
     padding-top: 75px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
