@@ -25,10 +25,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  &--active {
-    border-bottom: 2px solid #68b738;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -120,6 +116,10 @@
 
   .navigation__link {
     font-size: 18px;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }
 
