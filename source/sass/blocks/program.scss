@@ -93,10 +93,11 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .program__weight {

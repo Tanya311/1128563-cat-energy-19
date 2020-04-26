@@ -39,11 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
     background-image: none;
     text-align: left;
-    padding: 50px 30px 260px;
+    padding: 50px 20px 260px;
   }
 
   .promo__wrapper {

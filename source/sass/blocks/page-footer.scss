@@ -22,12 +22,13 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 30px;
+    padding: 60px 20px;
   }
 
   .page-footer__map-img {

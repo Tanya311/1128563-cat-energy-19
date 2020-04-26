@@ -80,9 +80,10 @@
   }
 
   .example__wrapper {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    padding: 51px 30px 75px;
+    padding: 51px 20px 75px;
   }
 
   .example__stats-wrapper {
