@@ -15,9 +15,10 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    padding-left: 32px;
+    padding-left: 22px;
     margin-top: 31px;
     margin-bottom: 12px;
     font-size: 60px;

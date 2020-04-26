@@ -17,10 +17,12 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    @include width-block(80%);
+    @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    box-sizing: border-box;
     margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .program-selection__text {

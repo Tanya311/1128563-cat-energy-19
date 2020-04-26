@@ -13,8 +13,9 @@
 @media (min-width: $tablet-width) {
   .products-catalog {
     @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    padding: 0 30px 35px;
+    padding: 0 20px 35px;
     margin-top: 156px;
   }
 
