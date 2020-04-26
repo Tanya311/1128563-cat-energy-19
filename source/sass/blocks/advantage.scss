@@ -37,26 +37,23 @@
     height: 60px;
     background-color: #68b738;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   &--useful::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
   }
 
   &--easy::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
   }
 
   &--transition::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
   }
 
   &--enjoy::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
   }
 }
 
