@@ -93,11 +93,12 @@
   }
 }
 
-.form__input-check {
+.form__input-check,
+.form__input-radio {
   display: none;
 }
 
-.form__input-check--program-check:checked ~ .form__label--program-check::after {
+.form__input-radio:checked ~ .form__label--program-check::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -108,7 +109,7 @@
   left: 20px;
 }
 
-.form__input-check--additional:checked ~ .form__label--additional::after {
+.form__input-check:checked ~ .form__label--additional::after {
   content: "";
   position: absolute;
   width: 22px;
