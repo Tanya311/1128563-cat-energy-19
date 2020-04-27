@@ -79,6 +79,8 @@
 
 @media (min-width: $tablet-width) {
   .product-card__image {
+    width: 100%;
+    height: auto;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
