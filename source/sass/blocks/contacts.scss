@@ -58,10 +58,12 @@
     padding: 66px 90px 59px 76px;
     background-color: $bg-primary;
     box-sizing: border-box;
+    z-index: 4;
   }
 
   .contacts__wrapper {
     @include width-block(100%);
+    min-width: 400px;
     padding-left: 0;
     padding-right: 0;
   }

@@ -1,9 +1,15 @@
 .promo {
   width: auto;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.8%, #ffffff 63.8%, #ffffff 100%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.9%, #ffffff 63.9%, #ffffff 100%);
   background-position: top center, 0 0;
   background-size: auto, auto;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.9%, #ffffff 63.9%, #ffffff 100%);
+    background-size: 320px auto, 100% auto;
+  }
+
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -44,7 +50,7 @@
     max-width: 900px;
     background-image: none;
     text-align: left;
-    padding: 50px 20px 260px;
+    padding: 50px 20px 535px;
   }
 
   .promo__wrapper {
@@ -67,9 +73,10 @@
 
   .promo__image {
     position: absolute;
-    margin-top: -20px;
+    width: 709px;
+    height: 609px;
     bottom: 0;
-    left: 200px;
+    left: 0;
     z-index: -1;
   }
 }
@@ -96,6 +103,10 @@
       left: 50%;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
@@ -107,9 +118,11 @@
   }
 
   .promo__image {
-    bottom: 50%;
+    width: 552px;
+    height: 449px;
+    top: 142px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    margin-left: -160px;
     z-index: 3;
   }
 }
