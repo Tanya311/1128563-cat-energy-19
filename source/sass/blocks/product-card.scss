@@ -1,13 +1,15 @@
 
 .product-card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px 24px;
-  width: 320px;
-
   border-bottom: 1px solid $border-color;
   position: relative;
   box-sizing: border-box;
+}
+
+.product-card__container {
+  @include width-block(320px);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 24px;
 
   &--other {
     padding: 17px 20px 24px;
@@ -77,6 +79,8 @@
 
 @media (min-width: $tablet-width) {
   .product-card__image {
+    width: 100%;
+    height: auto;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -99,6 +103,16 @@
       margin-bottom: 0;
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
+    }
+  }
+
+  .product-card__container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    &--other {
+      padding: 0;
     }
   }
 

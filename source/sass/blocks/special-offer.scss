@@ -4,6 +4,11 @@
   padding: 190px 50px 43px 50px;
   box-sizing: border-box;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   background-color: #70b447;
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,6 +39,11 @@
   .special-offer {
     width: 100%;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
     background-size: cover;
     padding: 75px 125px 79px 424px;
     margin-top: 69px;
@@ -56,6 +66,11 @@
     margin: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+
     justify-content: center;
     align-items: flex-end;
     padding: 190px 43px 43px 43px;

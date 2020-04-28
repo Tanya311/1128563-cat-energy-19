@@ -1,20 +1,21 @@
 .products-catalog {
-  @include width-block(320px);
+  @include width-block(auto);
 }
 
 .products-catalog__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   margin-top: 36px;
 }
 
 @media (min-width: $tablet-width) {
   .products-catalog {
     @include width-block(90%);
+    min-width: 748px;
     max-width: 900px;
-    padding: 0 30px 35px;
+    padding: 0 20px 35px;
     margin-top: 156px;
   }
 
@@ -22,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     border: none;
     margin: 0;
   }

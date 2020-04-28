@@ -1,4 +1,5 @@
 .form {
+  @include width-block(320px);
   margin-bottom: 34px;
 }
 
@@ -35,10 +36,21 @@
   padding: 20px 20px 0;
 
   &--program-check {
-    border: 1px solid $border-color;
     padding-top: 25px;
     margin-bottom: 27px;
     margin-top: 13px;
+    position: relative;
+  }
+
+  &--program-check::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    width: 150vw;
+    margin-left: -50vw;
+    border: 1px solid $border-color;
   }
 
   &--comment {
@@ -81,11 +93,12 @@
   }
 }
 
-.form__input-check {
+.form__input-check,
+.form__input-radio {
   display: none;
 }
 
-.form__input-check--program-check:checked ~ .form__label--program-check::after {
+.form__input-radio:checked ~ .form__label--program-check::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -96,7 +109,7 @@
   left: 20px;
 }
 
-.form__input-check--additional:checked ~ .form__label--additional::after {
+.form__input-check:checked ~ .form__label--additional::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -111,6 +124,24 @@
   font-size: 24px;
   line-height: 1em;
   color: $color-dark;
+  position: relative;
+  padding-right: 20px;
+  background-color: #ffffff;
+
+  &--owner {
+    width: 190px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 3px;
+    background-color: #68b738;
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .form__input {
@@ -118,6 +149,7 @@
   margin-top: 3px;
   width: 100%;
   font-family: $font-primary;
+  border: 1px solid $border-color;
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
@@ -134,6 +166,7 @@
   padding-top: 10px;
   margin-top: 5px;
   box-sizing: border-box;
+  border: 1px solid $border-color;
   width: 100%;
   min-height: 150px;
   font-size: 16px;
@@ -158,6 +191,12 @@
 
 @media (min-width: $tablet-width) {
   .form {
+    @include width-block(90%);
+    min-width: 748px;
+    max-width: 900px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -173,6 +212,17 @@
       margin-bottom: 75px;
     }
 
+    &--program-check::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 0;
+
+      width: 0;
+      margin-left: 0;
+      border: none;
+    }
+
     &--comment {
       margin-top: 48px;
       margin-bottom: 61px;
@@ -184,8 +234,21 @@
   }
 
   .form__fieldset-title {
-    margin-left: -4px;
+    margin-left: -34px;
     font-size: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    &--owner {
+      width: auto;
+    }
+
+    &::after {
+      top: 18px;
+      left: -50vw;
+      width: 150vw;
+    }
   }
 
   .form__list {
@@ -258,6 +321,8 @@
 
 @media (min-width: $desktop-width) {
   .form {
+    @include width-block(90%);
+    max-width: 1220px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 82px;
@@ -313,10 +378,6 @@
       display: flex;
       flex-wrap: wrap;
     }
-  }
-
-  .form__fieldset-title {
-    margin-left: 0;
   }
 
   .form__item {
