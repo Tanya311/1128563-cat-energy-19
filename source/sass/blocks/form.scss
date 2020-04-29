@@ -159,6 +159,17 @@
   color: $color-dark;
   text-transform: uppercase;
   letter-spacing: normal;
+
+  &--owner {
+    position: relative;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form__comment-text {
