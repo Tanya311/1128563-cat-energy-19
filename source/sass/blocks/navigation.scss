@@ -11,6 +11,7 @@
 }
 
 .navigation__link {
+  display: block;
   font-size: 20px;
   text-decoration: none;
   color: $color-dark;
@@ -35,7 +36,7 @@
   .navigation__toggle {
     position: absolute;
     top: 12px;
-    right: 22px;
+    right: 20px;
     display: block;
     width: 25px;
     height: 19px;

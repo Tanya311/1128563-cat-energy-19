@@ -69,7 +69,7 @@
           </p>
           <a class="program__catalog" href="catalog.html">Каталог Slim</a>
         </article>
-        <article class="program__weight">
+        <article class="program__weight program__weight--set">
           <h3 class="program__title program__title--set">Набор массы</h3>
           <p class="program__description">
             Заработать авторитет среди дворовых котов и даже собак?
@@ -122,7 +122,7 @@
                 srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
                 srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example__image example__image--before" src="img/before-mobile@1x.png" width="311" height="232"
+              <img class="example__image example__image--before" src="img/before-mobile@1x.png" width="319" height="240"
                 srcset="img/before-mobile@2x.png 2x" alt="Фото кота Бориса">
             </picture>
 
@@ -137,17 +137,17 @@
                 srcset="img/after-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
                 srcset="img/after-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example__image example__image--after" src="img/after-mobile@1x.png" width="311" height="232"
+              <img class="example__image example__image--after example__image--show" src="img/after-mobile@1x.png" width="319" height="240"
                 srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса">
             </picture>
             <div class="example__slider">
-              <span class="example__slider-label">Было</span>
+              <span class="example__slider-label example__slider-label--before" tabindex="0">Было</span>
               <div class="example__range-controls">
                 <div class="example__range-scale">
                   <span class="visually-hidden">тумблер</span>
                 </div>
               </div>
-              <span class="example__slider-label">Стало</span>
+              <span class="example__slider-label example__slider-labe--after" tabindex="0">Стало</span>
             </div>
           </div>
         </section>
@@ -230,5 +230,6 @@
     </script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

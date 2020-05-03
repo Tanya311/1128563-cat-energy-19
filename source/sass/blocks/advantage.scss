@@ -6,7 +6,7 @@
 
 .advantage__title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   font-size: 36px;
   font-weight: normal;
   color: $color-dark;
@@ -18,8 +18,8 @@
 }
 
 .advantage__item {
-  padding: 5px 15px 5px 40px;
-  margin-bottom: 15px;
+  padding: 4px 15px 5px 40px;
+  margin-bottom: 19px;
   font-family: $font-secondary;
   font-size: 14px;
   color: $color-grey;
@@ -77,25 +77,30 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
+    width: auto;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 619px;
+  }
+
+  .advantage__title {
     @include width-block(90%);
     min-width: 748px;
     max-width: 900px;
     padding: 32px 20px 0;
-  }
-
-  .advantage__title {
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 1;
   }
 
   .advantage__list {
+    @include width-block(90%);
+    min-width: 748px;
+    max-width: 900px;
+    padding: 32px 20px 55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 0;
-    padding-bottom: 55px;
-    border-bottom: 1px solid $border-color;
+
     margin-bottom: 0;
   }
 
@@ -155,9 +160,9 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    @include width-block(90%);
-    max-width: 1220px;
     padding: 49px 0 0 0;
+    margin-bottom: 165px;
+    border-bottom: none;
   }
 
   .advantage__title {
@@ -165,7 +170,8 @@
   }
 
   .advantage__list {
-    width: 100%;
+    @include width-block(90%);
+    max-width: 1220px;
     justify-content: space-between;
     border: none;
     padding-bottom: 63px;
