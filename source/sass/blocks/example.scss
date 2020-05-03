@@ -7,7 +7,7 @@
 
 .example__wrapper {
   @include width-block(320px);
-  padding: 23px 20px 38px;
+  padding: 23px 20px 36px;
 }
 
 .example__title {
@@ -22,6 +22,7 @@
   margin-bottom: 24px;
   font-family: $font-secondary;
   font-size: 14px;
+  line-height: 1.3;
   color: #444444;
 }
 
@@ -33,7 +34,7 @@
 
 .example__cost {
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -42,16 +43,26 @@
 
 .example__image {
   vertical-align: middle;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-left: -18px;
+  margin-bottom: 34px;
+
+  &--before {
+    vertical-align: middle;
+    margin-left: -18px;
+    margin-bottom: 34px;
+  }
 
   &--after {
+    vertical-align: middle;
+    margin-left: -18px;
+    margin-bottom: 34px;
     display: none;
   }
+
 }
 
 .example__slider {
-  padding: 0 34px;
+  padding: 0 29px 0 35px;
 
   display: flex;
   justify-content: space-around;
@@ -123,12 +134,13 @@
     &--before {
       left: 0;
       clip: rect(0, 336px, auto, auto);
+      display: block;
     }
 
     &--after {
       right: 0;
-
       clip: rect(0, auto, auto, 336px);
+      display: block;
     }
   }
 
@@ -226,6 +238,18 @@
     margin-top: 0;
     width: 636px;
     height: 500px;
+
+    &--before {
+      left: 0;
+      clip: rect(0, 336px, auto, auto);
+      display: block;
+    }
+
+    &--after {
+      right: 0;
+      clip: rect(0, auto, auto, 336px);
+      display: block;
+    }
   }
 
   .example__cost {
