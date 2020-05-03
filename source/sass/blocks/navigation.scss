@@ -17,7 +17,7 @@
   color: $color-dark;
   text-transform: uppercase;
   font-weight: 500;
-  padding-bottom: 12px;
+
 
   &:hover {
     opacity: 0.6;
@@ -98,6 +98,7 @@
     display: flex;
     justify-content: flex-end;
     border: none;
+    padding-top: 10px;
   }
 
   .navigation__item {
@@ -116,7 +117,9 @@
   }
 
   .navigation__link {
-    font-size: 18px;
+    font-size: 17px;
+    letter-spacing: normal;
+    padding-bottom: 10px;
 
     &--active {
       border-bottom: 2px solid #68b738;

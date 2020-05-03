@@ -98,17 +98,21 @@
   }
 
   .program__weight {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 30px;
-    padding: 81px 285px 62px 52px;
+    padding: 72px 280px 58px 52px;
     min-height: 313px;
     box-sizing: border-box;
+
+    &--set {
+      padding-right: 315px;
+    }
   }
 
   .program__title {
     font-size: 36px;
     margin-left: 0;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 
     &::before {
       content: "";
@@ -139,8 +143,8 @@
   .program__description {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 61px;
-    padding: 0 23px 0 0;
+    margin-bottom: 55px;
+    padding: 0 0 0 0;
     border: none;
   }
 

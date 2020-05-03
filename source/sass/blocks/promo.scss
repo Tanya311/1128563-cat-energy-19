@@ -50,18 +50,18 @@
     max-width: 900px;
     background-image: none;
     text-align: left;
-    padding: 50px 20px 535px;
+    padding: 42px 20px 530px;
   }
 
   .promo__wrapper {
-    padding: 0 0 0 90px;
+    padding: 0 0 0 88px;
     width: 100%;
   }
 
   .promo__title {
     font-size: 60px;
     color: $color-dark;
-    margin-bottom: 33px;
+    margin-bottom: 39px;
     width: 415px;
   }
 
@@ -76,7 +76,7 @@
     width: 709px;
     height: 609px;
     bottom: 0;
-    left: 0;
+    left: 20px;
     z-index: -1;
   }
 }

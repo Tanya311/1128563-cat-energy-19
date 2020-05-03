@@ -41,11 +41,11 @@
   }
 
   .stats:first-child {
-    margin-right: 43px;
+    margin-right: 39px;
   }
 
   .stats__value {
-    padding: 16px 31px 17px 30px;
+    padding: 16px 31px 25px 30px;
     border-radius: 4px;
     margin: 0;
 
@@ -55,6 +55,8 @@
   .stats__name {
     font-size: 14px;
     background-color: $bg-primary;
+    width: 127px;
+    bottom: -5px;
   }
 }
 
