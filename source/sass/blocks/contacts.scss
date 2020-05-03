@@ -11,6 +11,7 @@
   @include width-block(320px);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px 18px 10px 20px;
   text-align: left;
 }
@@ -19,14 +20,14 @@
   width: 123px;
   color: $color-dark;
   text-transform: uppercase;
-  line-height: 1.25em;
+  line-height: 1.25;
 }
 
 .contacts__address {
   width: 140px;
   font-family: $font-secondary;
   font-size: 14px;
-  line-height: 1.43em;
+  line-height: 1.43;
 }
 
 @media (min-width: $tablet-width) {
