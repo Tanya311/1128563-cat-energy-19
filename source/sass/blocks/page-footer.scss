@@ -65,6 +65,10 @@
   .page-footer__wrapper {
     @include width-block(90%);
     max-width: 1220px;
-    padding: 60px 0;
+    padding: 22px 0;
+  }
+
+  .page-footer__map {
+    min-height: 433px;
   }
 }

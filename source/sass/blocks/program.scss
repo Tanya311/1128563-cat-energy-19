@@ -172,16 +172,16 @@
   .program__weight {
     width: 47%;
     max-width: 570px;
-    padding: 81px 56px 62px 52px;
+    padding: 70px 56px 55px 52px;
   }
 
   .program__title {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     margin-left: 164px;
 
     &::before {
       right: auto;
-      left: 56px;
+      left: 50px;
       top: 46px;
       width: 100px;
       height: 100px;
@@ -190,22 +190,28 @@
 
   .program__title--loss::after {
     right: auto;
-    left: 70px;
-    top: 44px;
+    left: 65px;
+    top: 40px;
     width: 71px;
     height: 96px;
   }
 
   .program__title--set::after {
     right: auto;
-    left: 35px;
-    top: 65px;
+    left: 32px;
+    top: 66px;
     width: 134px;
     height: 57px;
   }
 
   .program__description {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     padding: 0;
+  }
+
+  .program__catalog {
+    &::after {
+      top: 9px;
+    }
   }
 }

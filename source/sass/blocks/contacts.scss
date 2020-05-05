@@ -25,6 +25,10 @@
 
 .contacts__address {
   width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 84px;
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 1.43;
@@ -35,7 +39,7 @@
     @include width-block(90%);
     min-width: 748px;
     max-width: 900px;
-    padding: 45px 62px 42px 62px;
+    padding: 40px 62px 40px 62px;
   }
 
   .contacts__description {
@@ -54,9 +58,9 @@
     position: absolute;
     width: 570px;
     left: 50%;
-    top: 95px;
+    top: 96px;
     margin-left: -610px;
-    padding: 66px 90px 59px 76px;
+    padding: 45px 84px 40px 76px;
     background-color: $bg-primary;
     box-sizing: border-box;
     z-index: 4;
@@ -65,7 +69,10 @@
   .contacts__wrapper {
     @include width-block(100%);
     min-width: 400px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

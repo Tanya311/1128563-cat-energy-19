@@ -32,3 +32,13 @@
     height: 59px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 203px;
+  }
+
+  .logo__image {
+    width: 203px;
+  }
+}

@@ -136,22 +136,24 @@
     flex-grow: 1;
   }
 
-  .navigation__link--bg-green {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: normal;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
   .navigation__link {
+    font-size: 20px;
+
+    &--bg-green {
+      text-decoration: none;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: normal;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
     &--active-bg-green {
       border-bottom: 2px solid #ffffff;
     }
