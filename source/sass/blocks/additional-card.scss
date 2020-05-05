@@ -34,8 +34,9 @@
   .additional-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 28px 38px 28px 37px;
+    padding: 22px 34px 28px 39px;
   }
 
   .additional-card:last-child {
@@ -43,8 +44,13 @@
   }
 
   .additional-card__title {
-    margin: 0 0 10px;
+    margin: 0 0 22px;
     font-size: 20px;
+  }
+
+  .additional-card__details {
+    width: 240px;
+
   }
 
   .additional-card__quantity,
@@ -57,7 +63,7 @@
   }
 
   .additional-card__price {
-    width: 100px;
+    width: 92px;
   }
 }
 

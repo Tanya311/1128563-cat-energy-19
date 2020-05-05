@@ -43,16 +43,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
 
     &--promo {
       width: 245px;
+      font-size: 20px;
     }
 
     &--form {
       width: 283px;
       margin-left: 71px;
       margin-right: 0;
+      font-size: 20px;
     }
   }
 }
