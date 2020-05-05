@@ -137,13 +137,14 @@
   }
 
   .navigation__link {
-    font-size: 20px;
+    font-size: 19px;
 
     &--bg-green {
       text-decoration: none;
       color: #ffffff;
       text-transform: uppercase;
       font-weight: normal;
+      font-size: 20px;
 
       &:hover {
         opacity: 0.6;
@@ -157,5 +158,13 @@
     &--active-bg-green {
       border-bottom: 2px solid #ffffff;
     }
+  }
+
+  .navigation__item {
+    margin-right: 33px;
+  }
+
+  .navigation__item:last-child {
+    margin-right: 0;
   }
 }

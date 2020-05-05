@@ -70,7 +70,7 @@
 @media (min-width: $desktop-width) {
   .additional-card {
     padding: 15px 0 15px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
   }
@@ -81,14 +81,18 @@
   }
 
   .additional-card__details {
-    width: 33%;
-    max-width: 250px;
+    padding-top: 10px;
     border-spacing: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    width: 298px;
+    margin-right: 27px;
+    margin-left: 143px;
+    vertical-align: bottom;
   }
 
   .additional-card__price {
-    width: 60px;
+    width: 50px;
+    text-align: left;
   }
 
   .additional-card__quantity {

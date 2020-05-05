@@ -184,15 +184,25 @@
     max-width: 245px;
     min-width: 200px;
 
-    padding: 165px 37px 40px 38px;
+    padding: 145px 37px 40px 38px;
     margin-bottom: 0;
-    margin-top: 142px;
+    margin-top: 145px;
 
     &--other {
       margin-bottom: 0;
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
+      padding: 145px 16px 40px;
     }
+  }
+
+  .product-card__details {
+    margin-bottom: 32px;
+  }
+
+  .product-card__details-name,
+  .product-card__details-value {
+    height: 29px;
   }
 
   .products-card__description {
