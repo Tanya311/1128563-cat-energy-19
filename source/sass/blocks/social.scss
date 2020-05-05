@@ -2,7 +2,7 @@
   @include width-block(100%);
   display: flex;
   justify-content: space-between;
-  padding: 20px 81px 19px 73px;
+  padding: 20px 81px 18px 73px;
   list-style: none;
   margin-top: 30px;
   margin-bottom: 18px;
@@ -21,6 +21,8 @@
   text-decoration: none;
   color: $color-dark;
 }
+
+
 
 @media (min-width: $tablet-width) {
   .social {

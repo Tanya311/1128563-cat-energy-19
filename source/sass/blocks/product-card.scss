@@ -12,18 +12,18 @@
   padding: 0 20px 24px;
 
   &--other {
-    padding: 17px 20px 24px;
+    padding: 20px 20px 24px;
   }
 }
 
 .product-card__title {
   width: 90px;
   line-height: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   &--other {
     width: auto;
-    margin: 58px auto 0;
+    margin: 56px auto 0;
   }
 
   &--other::before {
@@ -59,7 +59,7 @@
   font-family: $font-secondary;
   font-size: 12px;
   font-weight: normal;
-  line-height: 1.33;
+  line-height: 1.2;
   color: $color-grey;
 }
 
@@ -72,7 +72,7 @@
   font-size: 12px;
   line-height: 1.33;
   text-align: center;
-  margin: 11px auto 22px;
+  margin: 11px auto 20px;
   color: $color-grey;
 }
 

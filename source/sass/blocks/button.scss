@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 280px;
-  padding: 12px 0 11px;
+  padding: 10px 0 10px;
   text-decoration: none;
   font-size: 16px;
   color: $color-white;
@@ -15,10 +15,12 @@
 
   &--promo {
     font-size: 14px;
+    padding: 12px 0 11px;
   }
 
   &--form {
     margin-left: 20px;
+    padding: 12px 0 11px;
   }
 
   &:hover {
