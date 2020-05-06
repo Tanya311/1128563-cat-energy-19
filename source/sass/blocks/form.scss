@@ -10,7 +10,7 @@
 }
 
 .form__item {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   display: flex;
   align-items: center;
   position: relative;
@@ -18,15 +18,15 @@
   &--additional {
     padding-top: 11px;
     padding-bottom: 11px;
-    padding-left: 56px;
-    margin-bottom: 13px;
+    padding-left: 48px;
+    margin-bottom: 2px;
   }
 
   &--program-check {
-    margin-bottom: 13px;
-    padding-left: 68px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    margin-bottom: 10px;
+    padding-left: 47px;
+    padding-top: 6px;
+    padding-bottom: 7px;
   }
 }
 
@@ -36,9 +36,10 @@
   padding: 20px 20px 0;
 
   &--program-check {
-    padding-top: 25px;
-    margin-bottom: 27px;
-    margin-top: 13px;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 29px;
+    margin-top: 11px;
     position: relative;
   }
 
@@ -54,12 +55,12 @@
   }
 
   &--comment {
-    margin-top: 19px;
-    margin-bottom: 25px;
+    margin-top: 17px;
+    margin-bottom: 24px;
   }
 
   &--additional {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 }
 
@@ -74,22 +75,22 @@
   &--program-check::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #cdcdcd;
-    top: -1px;
-    left: 8px;
+    top: -2px;
+    left: 1px;
   }
 
   &--additional::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #cdcdcd;
-    top: -1px;
-    left: 0;
+    top: 3px;
+    left: 1px;
   }
 }
 
@@ -101,12 +102,12 @@
 .form__input-radio:checked ~ .form__label--program-check::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 11px;
-  left: 20px;
+  top: 9px;
+  left: 12px;
 }
 
 .form__input-check:checked ~ .form__label--additional::after {
@@ -116,11 +117,11 @@
   height: 17px;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 11px;
-  left: 12px;
+  left: 9px;
 }
 
 .form__fieldset-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   font-size: 24px;
   line-height: 1em;
   color: $color-dark;
@@ -129,13 +130,13 @@
   background-color: #ffffff;
 
   &--owner {
-    width: 190px;
+    width: 183px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 0;
     height: 3px;
     background-color: #68b738;
@@ -167,7 +168,7 @@
 
 .form__input-icon {
   position: absolute;
-  right: 20px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
