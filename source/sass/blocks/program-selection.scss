@@ -20,6 +20,7 @@
 @media (min-width: $tablet-width) {
   .program-selection {
     width: 100%;
+    margin-top: 49px;
   }
 
   .program-selection__text {
@@ -27,7 +28,8 @@
     min-width: 748px;
     max-width: 900px;
     font-size: 20px;
-    padding-left: 72px;
+    padding-left: 60px;
+    padding-right: 310px;
     line-height: 1.5;
   }
 }
