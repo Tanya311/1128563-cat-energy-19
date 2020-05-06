@@ -377,6 +377,7 @@
   .form {
     @include width-block(90%);
     max-width: 1220px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 82px;
@@ -401,20 +402,29 @@
     }
 
     &--owner {
-      margin-top: 50px;
+      margin-top: 49px;
       padding-top: 40px;
     }
 
     &--comment {
-      margin-top: 48px;
-      margin-bottom: 61px;
+      margin-top: 47px;
+      margin-bottom: 64px;
       padding-top: 40px;
     }
 
     &--additional {
-      margin-bottom: 45px;
+      margin-bottom: 40px;
       padding-top: 40px;
     }
+  }
+
+  .form__fieldset-title {
+    margin-left: -41px;
+    font-size: 36px;
+    padding-left: 39px;
+    padding-right: 43px;
+    margin-bottom: 10px;
+
   }
 
   .form__list {
@@ -424,8 +434,10 @@
     justify-content: space-between;
 
     &--program-check {
-      padding-top: 36px;
-      margin-bottom: 13px;
+      padding-top: 25px;
+      margin-top: -21px;
+      padding-bottom: 4px;
+      padding-left: 22px;
     }
 
     &--additional {
@@ -435,7 +447,7 @@
   }
 
   .form__item {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -446,6 +458,12 @@
 
     &--owner {
       width: 47%;
+    }
+  }
+
+  .form__input {
+    &----pet-data {
+      margin-top: 0;
     }
   }
 
