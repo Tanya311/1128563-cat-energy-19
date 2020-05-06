@@ -1,24 +1,36 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0;
 }
 
 .copyright__text {
   font-family: $font-secondary;
   margin: 0;
+  color: $color-grey;
 }
 
 .copyright__link {
   margin-right: -6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
 }
 
-
-.copyright__link path {
+.copyright__link svg {
   fill: #666666;
 }
 
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #68b738;
+}
+
+
+.copyright__link:active .copyright__text,
+.copyright__link:active svg {
+  fill: #68b738;
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
   .copyright {

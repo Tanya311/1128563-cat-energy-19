@@ -13,16 +13,6 @@
   font-family: $font-primary;
   cursor: pointer;
 
-  &--promo {
-    font-size: 14px;
-    padding: 12px 0 11px;
-  }
-
-  &--form {
-    margin-left: 20px;
-    padding: 8px 0 9px;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }
@@ -31,9 +21,29 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &--promo {
+    font-size: 14px;
+    padding: 12px 0 11px;
+    z-index: 2;
+  }
+
+  &--form {
+    margin-left: 20px;
+    padding: 8px 0 9px;
+  }
+
   &--more {
     background-color: #f2f2f2;
     color: $color-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
   }
 }
 

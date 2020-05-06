@@ -22,6 +22,19 @@
   color: $color-dark;
 }
 
+.social__link svg {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
 
 
 @media (min-width: $tablet-width) {

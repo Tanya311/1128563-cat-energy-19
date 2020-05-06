@@ -86,6 +86,21 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    &::after {
+      width: 34px;
+      height: 12px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-size: contain;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
