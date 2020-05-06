@@ -351,7 +351,7 @@
               </li>
               <li class="additional-products__item additional-card">
                 <h3 class="additional-card__title">Молоко</h3>
-               <table class="additional-card__details">
+                <table class="additional-card__details">
                   <tr>
                     <td class="additional-card__quantity">1 литр</td>
                     <td class="additional-card__price">100 Р.</td>
@@ -444,20 +444,20 @@
     <script src="js/svg4everybody.legacy.min.js"></script>
     <script>
       if (location.hash === '') {
-	      svg4everybody();
+        svg4everybody();
       } else if (location.hash === '#fill') {
-	      svg4everybody({
-		      polyfill: true
-	      });
+        svg4everybody({
+          polyfill: true
+        });
       } else if (location.hash === '#oldie') {
-	      svg4everybody({
-		      nosvg: true,
-		      polyfill: true
-	      });
+        svg4everybody({
+          nosvg: true,
+          polyfill: true
+        });
       }
       function addSVG(node, href) {
-	      node.innerHTML ='<' + 'svg role="presentation"' + '><' + 'use xlink:href="' + href + '"/' + '><' + '/svg' + '>';
-	      node.parentNode.replaceChild(node.lastChild, node);
+        node.innerHTML ='<' + 'svg role="presentation"' + '><' + 'use xlink:href="' + href + '"/' + '><' + '/svg' + '>';
+        node.parentNode.replaceChild(node.lastChild, node);
       }
     </script>
     <script src="js/picturefill.min.js"></script>
