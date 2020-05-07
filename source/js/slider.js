@@ -13,7 +13,8 @@
   */
   var sliderAfterClickHandler = function () {
     imageBefore.style = 'display: none;';
-    imageAfter.style = 'display: block; clip: auto;';
+    imageAfter.style = 'display: block';
+    imageAfter.classList.remove('example__image--after-clip');
   };
 
   /**
@@ -22,7 +23,8 @@
   */
   var sliderBeforeClickHandler = function () {
     imageAfter.style = 'display: none;';
-    imageBefore.style = 'display: block; clip: auto;';
+    imageBefore.style = 'display: block;';
+    imageBefore.classList.remove('example__image--before-clip');
   };
 
   /**
@@ -30,8 +32,10 @@
   * @description функция обработчик при нажатии на кнопку слайдера
   */
   var rangeScaleClickHandler = function () {
-    imageAfter.style = 'display:  block; clip: rect(0, auto, auto, 336px)';
-    imageBefore.style = 'display: block; clip: rect(0, 336px, auto, auto);';
+    imageBefore.style = 'display: block;';
+    imageAfter.style = 'display: block';
+    imageBefore.classList.add('example__image--before-clip');
+    imageAfter.classList.add('example__image--after-clip');
   };
 
   sliderAfter.addEventListener('click', sliderAfterClickHandler);

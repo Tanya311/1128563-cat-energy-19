@@ -143,6 +143,10 @@
 
     &--before {
       left: -14px;
+      clip: auto;
+    }
+
+    &--before-clip {
       clip: rect(0, 332px, auto, auto);
       display: block;
     }
@@ -150,6 +154,10 @@
     &--after {
       width: 670px;
       right: -27px;
+      clip: auto;
+    }
+
+    &--after-clip {
       clip: rect(0, auto, auto, 324px);
       display: block;
     }
@@ -290,12 +298,22 @@
 
     &--before {
       left: -83px;
-      clip: rect(0, 368px, auto, auto);
+      clip: auto;
       display: block;
     }
 
     &--after {
       right: -43px;
+      clip: auto;
+      display: block;
+    }
+
+    &--before-clip {
+      clip: rect(0, 368px, auto, auto);
+      display: block;
+    }
+
+    &--after-clip {
       clip: rect(0, auto, auto, 372px);
       display: block;
     }
