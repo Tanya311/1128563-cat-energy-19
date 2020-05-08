@@ -1,13 +1,15 @@
 .program-selection {
   overflow: hidden;
   text-align: left;
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .program-selection__text {
   @include width-block(320px);
   margin-top: 0;
+  margin-bottom: 15px;
   padding-left: 20px;
+  padding-right: 70px;
   font-size: 14px;
   line-height: 1.29;
   color: $color-dark;
@@ -18,6 +20,7 @@
 @media (min-width: $tablet-width) {
   .program-selection {
     width: 100%;
+    margin-top: 49px;
   }
 
   .program-selection__text {
@@ -25,7 +28,8 @@
     min-width: 748px;
     max-width: 900px;
     font-size: 20px;
-    padding-left: 72px;
+    padding-left: 60px;
+    padding-right: 310px;
     line-height: 1.5;
   }
 }
@@ -36,6 +40,7 @@
     max-width: 1220px;
     font-size: 20px;
     padding-left: 0;
+    padding-right: 850px;
     margin-bottom: 64px;
   }
 }

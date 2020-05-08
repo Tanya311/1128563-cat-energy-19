@@ -21,8 +21,9 @@
   .page-header {
     @include width-block(90%);
     max-width: 1220px;
-    padding-top: 54px;
+    padding-top: 52px;
     padding-right: 0;
     padding-left: 0;
+    z-index: 6;
   }
 }

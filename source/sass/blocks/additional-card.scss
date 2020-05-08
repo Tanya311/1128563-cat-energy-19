@@ -1,7 +1,7 @@
 .additional-card {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 17px;
-  padding-top: 11px;
+  padding-bottom: 16px;
+  padding-top: 12px;
 }
 
 .additional-card__title {
@@ -16,7 +16,7 @@
 .additional-card__details {
   width: 280px;
   border-spacing: 0;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .additional-card__quantity,
@@ -34,8 +34,9 @@
   .additional-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 28px 38px 28px 37px;
+    padding: 22px 34px 28px 39px;
   }
 
   .additional-card:last-child {
@@ -43,8 +44,12 @@
   }
 
   .additional-card__title {
-    margin: 0 0 10px;
+    margin: 0 0 22px;
     font-size: 20px;
+  }
+
+  .additional-card__details {
+    width: 240px;
   }
 
   .additional-card__quantity,
@@ -57,14 +62,14 @@
   }
 
   .additional-card__price {
-    width: 100px;
+    width: 92px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-card {
     padding: 15px 0 15px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
   }
@@ -75,14 +80,18 @@
   }
 
   .additional-card__details {
-    width: 33%;
-    max-width: 250px;
+    padding-top: 10px;
     border-spacing: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    width: 298px;
+    margin-right: 27px;
+    margin-left: 143px;
+    vertical-align: bottom;
   }
 
   .additional-card__price {
-    width: 60px;
+    width: 50px;
+    text-align: left;
   }
 
   .additional-card__quantity {

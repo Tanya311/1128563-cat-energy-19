@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 280px;
-  padding: 10px 0 9px;
+  padding: 10px 0 10px;
   text-decoration: none;
   font-size: 16px;
   color: $color-white;
@@ -13,10 +13,6 @@
   font-family: $font-primary;
   cursor: pointer;
 
-  &--form {
-    margin-left: 20px;
-  }
-
   &:hover {
     background-color: #5eaa2f;
   }
@@ -25,9 +21,29 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &--promo {
+    font-size: 14px;
+    padding: 12px 0 11px;
+    z-index: 2;
+  }
+
+  &--form {
+    margin-left: 20px;
+    padding: 8px 0 9px;
+  }
+
   &--more {
     background-color: #f2f2f2;
     color: $color-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
   }
 }
 
@@ -37,16 +53,19 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
 
     &--promo {
       width: 245px;
+      font-size: 20px;
     }
 
     &--form {
-      width: 283px;
-      margin-left: 71px;
+      width: 281px;
+      margin-left: 42px;
       margin-right: 0;
+      padding: 11px 0;
+      font-size: 20px;
     }
   }
 }

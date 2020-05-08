@@ -1,12 +1,12 @@
 .advantage {
   @include width-block(320px);
-  padding: 22px 20px 0;
+  padding: 25px 20px 0;
   text-align: left;
 }
 
 .advantage__title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-size: 36px;
   font-weight: normal;
   color: $color-dark;
@@ -18,8 +18,8 @@
 }
 
 .advantage__item {
-  padding: 5px 15px 5px 40px;
-  margin-bottom: 15px;
+  padding: 4px 15px 5px 40px;
+  margin-bottom: 17px;
   font-family: $font-secondary;
   font-size: 14px;
   color: $color-grey;
@@ -77,31 +77,37 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
-    @include width-block(90%);
-    min-width: 748px;
-    max-width: 900px;
-    padding: 32px 20px 0;
+    width: auto;
+    border-bottom: 1px solid $border-color;
+    padding: 14px 0 0;
+    margin-bottom: 619px;
   }
 
   .advantage__title {
-    margin-bottom: 63px;
+    @include width-block(90%);
+    min-width: 748px;
+    max-width: 900px;
+    padding: 0 20px;
+    margin-bottom: 38px;
     font-size: 60px;
     line-height: 1;
   }
 
   .advantage__list {
+    @include width-block(90%);
+    min-width: 748px;
+    max-width: 900px;
+    padding: 32px 20px 57px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 0;
-    padding-bottom: 55px;
-    border-bottom: 1px solid $border-color;
+
     margin-bottom: 0;
   }
 
   .advantage__item {
     font-size: 16px;
-    padding: 117px 75px 48px 0;
+    line-height: 1.4;
+    padding: 115px 38px 48px 0;
     width: 40%;
     position: relative;
     margin-bottom: 0;
@@ -123,16 +129,21 @@
       width: 71px;
       height: 288px;
       left: 116px;
-      top: -77px;
+      top: -92px;
       z-index: -1;
     }
 
     &--one {
-      margin-bottom: 87px;
+      margin-bottom: 86px;
+      margin-right: 99px;
     }
 
     &--two {
-      margin-bottom: 87px;
+      margin-bottom: 85px;
+    }
+
+    &--three {
+      margin-right: 99px;
     }
 
     &--one::after {
@@ -155,25 +166,39 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    @include width-block(90%);
-    max-width: 1220px;
-    padding: 49px 0 0 0;
+    padding: 45px 0 0 0;
+    margin-bottom: 150px;
+    border-bottom: none;
   }
 
   .advantage__title {
+    @include width-block(90%);
+    max-width: 1220px;
     margin-bottom: 63px;
+    padding: 0;
   }
 
   .advantage__list {
-    width: 100%;
+    @include width-block(90%);
+    max-width: 1220px;
     justify-content: space-between;
     border: none;
-    padding-bottom: 63px;
+    padding: 5px 0 63px;
   }
 
   .advantage__item {
     padding: 117px 0 48px 0;
-    width: 20%;
+    width: 20.1%;
     margin-bottom: 0;
+    margin-right: 10px;
+    line-height: 1.5;
+
+    &::after {
+      top: -105px;
+    }
+
+    &--four {
+      margin-right: 0;
+    }
   }
 }

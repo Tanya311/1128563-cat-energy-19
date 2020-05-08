@@ -1,7 +1,7 @@
 .special-offer {
-  margin-left: 37px auto 0;
+  margin: 40px auto 0;
   width: 100%;
-  padding: 190px 50px 43px 50px;
+  padding: 190px 50px 40px 50px;
   box-sizing: border-box;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
@@ -45,12 +45,12 @@
     }
 
     background-size: cover;
-    padding: 75px 125px 79px 424px;
+    padding: 75px 12px 67px 424px;
     margin-top: 69px;
   }
 
   .special-offer__description {
-    width: 160px;
+    width: 165px;
     text-align: left;
 
     &::before {
@@ -73,7 +73,7 @@
 
     justify-content: center;
     align-items: flex-end;
-    padding: 190px 43px 43px 43px;
+    padding: 190px 40px 43px 40px;
   }
 
   .special-offer__description {
@@ -81,7 +81,7 @@
     text-align: center;
 
     &::before {
-      top: 55px;
+      top: 65px;
       left: 50%;
       transform: translateX(-50%);
       background-image: url("../img/icon-gift.svg");

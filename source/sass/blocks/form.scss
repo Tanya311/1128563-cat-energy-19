@@ -10,7 +10,7 @@
 }
 
 .form__item {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   display: flex;
   align-items: center;
   position: relative;
@@ -18,15 +18,15 @@
   &--additional {
     padding-top: 11px;
     padding-bottom: 11px;
-    padding-left: 56px;
-    margin-bottom: 13px;
+    padding-left: 48px;
+    margin-bottom: 2px;
   }
 
   &--program-check {
-    margin-bottom: 13px;
-    padding-left: 68px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    margin-bottom: 10px;
+    padding-left: 47px;
+    padding-top: 6px;
+    padding-bottom: 7px;
   }
 }
 
@@ -36,9 +36,10 @@
   padding: 20px 20px 0;
 
   &--program-check {
-    padding-top: 25px;
-    margin-bottom: 27px;
-    margin-top: 13px;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 29px;
+    margin-top: 11px;
     position: relative;
   }
 
@@ -54,12 +55,12 @@
   }
 
   &--comment {
-    margin-top: 19px;
-    margin-bottom: 25px;
+    margin-top: 17px;
+    margin-bottom: 24px;
   }
 
   &--additional {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 }
 
@@ -74,53 +75,73 @@
   &--program-check::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #cdcdcd;
-    top: -1px;
-    left: 8px;
+    top: -2px;
+    left: 1px;
   }
 
   &--additional::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #cdcdcd;
-    top: -1px;
-    left: 0;
+    box-sizing: border-box;
+    top: 3px;
+    left: 1px;
   }
 }
 
-.form__input-check,
+.form__input-check {
+  &:hover + .form__label--additional::before,
+  &:active + .form__label--additional::before,
+  &:focus + .form__label--additional::before {
+    border-color: #bababa;
+  }
+
+  &:active + .form__label--additional {
+    opacity: 0.3;
+  }
+}
+
 .form__input-radio {
-  display: none;
+  &:hover + .form__label--program-check::before,
+  &:active + .form__label--program-check::before,
+  &:focus + .form__label--program-check::before {
+    border-color: #bababa;
+  }
+
+  &:active + .form__label--program-check {
+    opacity: 0.3;
+  }
 }
 
 .form__input-radio:checked ~ .form__label--program-check::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 11px;
-  left: 20px;
+  top: 9px;
+  left: 12px;
 }
 
 .form__input-check:checked ~ .form__label--additional::after {
   content: "";
   position: absolute;
   width: 22px;
-  height: 17px;
+  height: 16px;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 11px;
-  left: 12px;
+  left: 9px;
 }
 
 .form__fieldset-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   font-size: 24px;
   line-height: 1em;
   color: $color-dark;
@@ -129,13 +150,13 @@
   background-color: #ffffff;
 
   &--owner {
-    width: 190px;
+    width: 183px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 0;
     height: 3px;
     background-color: #68b738;
@@ -149,7 +170,7 @@
   margin-top: 3px;
   width: 100%;
   font-family: $font-primary;
-  border: 1px solid $border-color;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
@@ -163,11 +184,37 @@
   &--owner {
     position: relative;
   }
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
+  }
+
+  &:active ~ .form__input-icon {
+    fill: #68b738;
+  }
+
+  &:focus ~ .form__input-icon {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:invalid ~ .form__input-icon {
+    fill: #ff8282;
+  }
 }
 
 .form__input-icon {
   position: absolute;
-  right: 20px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -211,16 +258,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
   }
 
   .form__fieldset {
-    padding: 40px 67px 0 73px;
+    padding: 15px 37px 0 42px;
     width: 100%;
 
     &--program-check {
       border: none;
       margin-bottom: 75px;
+      margin-top: 40px;
     }
 
     &--program-check::before {
@@ -236,19 +284,20 @@
 
     &--comment {
       margin-top: 48px;
-      margin-bottom: 61px;
+      margin-bottom: 62px;
     }
 
     &--additional {
-      margin-bottom: 13px;
+      margin-bottom: 22px;
     }
   }
 
   .form__fieldset-title {
-    margin-left: -34px;
+    margin-left: -41px;
     font-size: 36px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 37px;
+    padding-right: 43px;
+    margin-bottom: 35px;
 
 
     &--owner {
@@ -256,7 +305,7 @@
     }
 
     &::after {
-      top: 18px;
+      top: 22px;
       left: -50vw;
       width: 150vw;
     }
@@ -265,7 +314,8 @@
   .form__list {
     &--program-check {
       border: 1px solid $border-color;
-      padding-top: 30px;
+      padding-left: 18px;
+      padding-top: 26px;
       padding-bottom: 10px;
     }
 
@@ -276,8 +326,9 @@
     &--additional {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       margin-top: 0;
-      padding-top: 10px;
+      padding-top: 5px;
     }
   }
 
@@ -288,30 +339,66 @@
 
     &--additional {
       width: 45%;
-      margin-bottom: 36px;
-      padding-left: 40px;
+      margin-bottom: 28px;
+      padding-left: 55px;
       box-sizing: border-box;
     }
 
     &--program-check {
       padding: 6px 0 6px 68px;
     }
+
+    &--telephone {
+      margin-left: -4px;
+    }
   }
 
   .form__label {
     font-size: 20px;
-    margin-right: 7px;
+    margin-right: 18px;
+
+    &--program-check::before {
+      width: 40px;
+      height: 40px;
+      top: -2px;
+      left: 7px;
+    }
+
+    &--additional::before {
+      width: 40px;
+      height: 40px;
+      top: 4px;
+      left: -2px;
+    }
   }
 
   .form__input {
-    margin-left: 10px;
-    padding: 12px 0 12px 16px;
+    margin-left: 0;
+    padding: 12px 0 12px 18px;
 
     flex-grow: 1;
   }
 
+  .form__input-radio:checked ~ .form__label--program-check::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 9px;
+    left: 17px;
+  }
+
+  .form__input-check:checked ~ .form__label--additional::after {
+    content: "";
+    top: 14px;
+    left: 8px;
+  }
+
+  .form__input-icon {
+    right: 16px;
+  }
+
   .form__comment-text {
-    padding-left: 20px;
+    padding-left: 15px;
     margin-top: 26px;
     box-sizing: border-box;
     width: 100%;
@@ -327,6 +414,7 @@
   .form__required-fields {
     font-size: 16px;
     margin-left: 61px;
+    margin-top: 15px;
   }
 }
 
@@ -334,6 +422,7 @@
   .form {
     @include width-block(90%);
     max-width: 1220px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 82px;
@@ -358,20 +447,28 @@
     }
 
     &--owner {
-      margin-top: 50px;
+      margin-top: 49px;
       padding-top: 40px;
     }
 
     &--comment {
-      margin-top: 48px;
-      margin-bottom: 61px;
+      margin-top: 47px;
+      margin-bottom: 64px;
       padding-top: 40px;
     }
 
     &--additional {
-      margin-bottom: 45px;
+      margin-bottom: 40px;
       padding-top: 40px;
     }
+  }
+
+  .form__fieldset-title {
+    margin-left: -41px;
+    font-size: 36px;
+    padding-left: 39px;
+    padding-right: 43px;
+    margin-bottom: 10px;
   }
 
   .form__list {
@@ -381,8 +478,10 @@
     justify-content: space-between;
 
     &--program-check {
-      padding-top: 36px;
-      margin-bottom: 13px;
+      padding-top: 25px;
+      margin-top: -21px;
+      padding-bottom: 4px;
+      padding-left: 22px;
     }
 
     &--additional {
@@ -392,7 +491,7 @@
   }
 
   .form__item {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -403,6 +502,12 @@
 
     &--owner {
       width: 47%;
+    }
+  }
+
+  .form__input {
+    &----pet-data {
+      margin-top: 0;
     }
   }
 

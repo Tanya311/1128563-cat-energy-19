@@ -1,12 +1,12 @@
 .promo {
   width: auto;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.9%, #ffffff 63.9%, #ffffff 100%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  64%, #ffffff 64%, #ffffff 100%);
   background-position: top center, 0 0;
   background-size: auto, auto;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.9%, #ffffff 63.9%, #ffffff 100%);
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.7%, #ffffff 63.7%, #ffffff 100%);
     background-size: 320px auto, 100% auto;
   }
 
@@ -17,7 +17,7 @@
 
 .promo__wrapper {
   @include width-block(320px);
-  padding-top: 29px;
+  padding-top: 26px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -27,7 +27,7 @@
   line-height: 1em;
   font-weight: normal;
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 }
 
 .promo__slogan {
@@ -50,18 +50,18 @@
     max-width: 900px;
     background-image: none;
     text-align: left;
-    padding: 50px 20px 535px;
+    padding: 42px 20px 530px;
   }
 
   .promo__wrapper {
-    padding: 0 0 0 90px;
+    padding: 0 0 0 88px;
     width: 100%;
   }
 
   .promo__title {
     font-size: 60px;
     color: $color-dark;
-    margin-bottom: 33px;
+    margin-bottom: 39px;
     width: 415px;
   }
 
@@ -76,7 +76,7 @@
     width: 709px;
     height: 609px;
     bottom: 0;
-    left: 0;
+    left: 20px;
     z-index: -1;
   }
 }
@@ -86,23 +86,23 @@
     @include width-block(100%);
     max-width: 100%;
     margin-top: -127px;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
     padding: 0;
     display: flex;
     background: linear-gradient(to right, #ffffff  0%, #ffffff  50%, #63a73a 50%, #63a73a 100%);
-    z-index: -1;
     overflow: hidden;
 
     &::after {
       content: "";
       width: 720px;
-      height: 669px;
+      height: 700px;
 
       position: absolute;
       top: 0;
-      left: 50%;
+      right: 0;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-size: cover;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
@@ -113,16 +113,20 @@
   .promo__wrapper {
     @include width-block(90%);
     max-width: 1220px;
-    padding: 226px 0 172px 83px;
+    padding: 224px 0 192px 80px;
     z-index: 5;
   }
 
   .promo__image {
     width: 552px;
-    height: 449px;
-    top: 142px;
+    height: 499px;
+    top: 140px;
     left: 50%;
     margin-left: -160px;
     z-index: 3;
+  }
+
+  .promo__slogan {
+    margin-bottom: 51px;
   }
 }
