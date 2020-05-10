@@ -11,8 +11,7 @@ var csso = require("gulp-csso");
 
 var imagemin = require("gulp-imagemin");
 var uglify = require('gulp-uglify');
-var htmlValidator = require('gulp-w3c-html-validator');
-var gulpHtmlBemValidator = require('gulp-html-bem-validator');
+
 const htmlmin = require('gulp-htmlmin');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
