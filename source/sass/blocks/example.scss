@@ -90,11 +90,13 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    outline: none;
+  &:hover {
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.23%);
     margin-bottom: -1px;
+  }
+
+  &:focus {
+    outline: 1px solid hsla(0, 0%, 0%, 0.23%);
   }
 
   &:active {
@@ -227,7 +229,9 @@
       transform: translate(-50%, -50%);
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 

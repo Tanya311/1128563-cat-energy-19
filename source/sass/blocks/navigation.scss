@@ -23,6 +23,10 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline: 2px solid #68b738;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -138,7 +142,6 @@
 
   .navigation__link {
     font-size: 19px;
-    letter-spacing: 0;
 
     &--bg-green {
       text-decoration: none;
@@ -149,6 +152,10 @@
 
       &:hover {
         opacity: 0.6;
+      }
+
+      &:focus {
+        outline: 2px solid #ffffff;
       }
 
       &:active {
