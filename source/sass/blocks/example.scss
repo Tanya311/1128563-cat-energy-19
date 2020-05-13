@@ -193,7 +193,7 @@
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
     position: relative;
-    top: -15px;
+    top: -18px;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -237,6 +237,7 @@
     &:active {
       border-bottom: none;
       outline: none;
+      margin-top: -1px;
     }
   }
 }

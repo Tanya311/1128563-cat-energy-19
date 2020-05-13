@@ -71,6 +71,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   margin-right: 15px;
+  cursor: pointer;
 
   &--program-check::before {
     content: "";
@@ -82,6 +83,7 @@
     top: -2px;
     left: 1px;
   }
+
 
   &--additional::before {
     content: "";
@@ -97,9 +99,13 @@
 
 .form__input-check {
   &:hover + .form__label--additional::before,
-  &:active + .form__label--additional::before,
-  &:focus + .form__label--additional::before {
+  &:active + .form__label--additional::before {
     border-color: #bababa;
+    cursor: pointer;
+  }
+
+  &:focus + .form__label--additional::before {
+    border: 2px solid #bababa;
   }
 
   &:active + .form__label--additional {
@@ -112,6 +118,7 @@
   &:active + .form__label--program-check::before,
   &:focus + .form__label--program-check::before {
     border-color: #bababa;
+    cursor: pointer;
   }
 
   &:active + .form__label--program-check {
@@ -126,8 +133,8 @@
   height: 12px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 9px;
-  left: 12px;
+  top: 8px;
+  left: 11.5px;
 }
 
 .form__input-check:checked ~ .form__label--additional::after {
@@ -137,7 +144,7 @@
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 11px;
-  left: 9px;
+  left: 6px;
 }
 
 .form__fieldset-title {
@@ -177,7 +184,7 @@
   font-style: normal;
   text-align: left;
   vertical-align: middle;
-  color: $color-dark;
+  color: $color-grey;
   text-transform: uppercase;
   letter-spacing: normal;
 
@@ -191,8 +198,9 @@
 
   &:active,
   &:focus {
-    border: 1px solid #444444;
+    border: 2px solid #444444;
     outline: none;
+    padding: 9px 0 8px 15px;
   }
 
   &:active ~ .form__input-icon {
@@ -204,7 +212,8 @@
   }
 
   &:invalid {
-    border: 1px solid #ff8282;
+    border: 2px solid #ff8282;
+    padding: 9px 0 8px 15px;
   }
 
   &:invalid ~ .form__input-icon {
@@ -229,7 +238,28 @@
   min-height: 150px;
   font-size: 16px;
   font-family: $font-primary;
+  color: $color-grey;
   text-transform: uppercase;
+  resize: none;
+  overflow: auto;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 9px;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    padding-left: 15px;
+    padding-top: 9px;
+  }
 }
 
 .form__input::placeholder,
@@ -375,16 +405,25 @@
   .form__input {
     margin-left: 0;
     padding: 12px 0 12px 18px;
-
+    font-size: 20px;
     flex-grow: 1;
+
+    &:active,
+    &:focus {
+      padding: 11px 0 11px 17px;
+    }
+
+    &:invalid {
+      padding: 11px 0 11px 17px;
+    }
   }
 
   .form__input-radio:checked ~ .form__label--program-check::after {
     content: "";
     width: 18px;
     height: 18px;
-    top: 9px;
-    left: 17px;
+    top: 10px;
+    left: 19.5px;
   }
 
   .form__input-check:checked ~ .form__label--additional::after {
@@ -404,6 +443,15 @@
     width: 100%;
     min-height: 174px;
     font-size: 20px;
+
+    &:active,
+    &:focus {
+      padding-left: 14px;
+    }
+
+    &:invalid {
+      padding-left: 14px;
+    }
   }
 
   .form__input::placeholder,

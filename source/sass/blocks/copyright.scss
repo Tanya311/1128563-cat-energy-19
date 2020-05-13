@@ -25,6 +25,10 @@
   fill: #68b738;
 }
 
+.copyright__link:focus {
+  outline-color: #68b738;
+}
+
 
 .copyright__link:active .copyright__text,
 .copyright__link:active svg {

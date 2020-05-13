@@ -20,22 +20,23 @@
 .social__link {
   text-decoration: none;
   color: $color-dark;
-}
+  outline: none;
 
-.social__link svg {
-  fill: #666666;
-
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: #68b738;
+    outline: none;
   }
 
-  &:active {
+  &:active svg {
     fill: #68b738;
     opacity: 0.3;
   }
 }
 
+.social__link svg {
+  fill: #666666;
+}
 
 @media (min-width: $tablet-width) {
   .social {
