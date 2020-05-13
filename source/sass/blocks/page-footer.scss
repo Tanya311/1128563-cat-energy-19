@@ -67,6 +67,7 @@
 
   .page-footer__map-iframe {
     height: 100%;
+    margin-top: 0;
   }
 
   .page-footer__map-img {
@@ -83,5 +84,9 @@
 
   .page-footer__map {
     min-height: 433px;
+  }
+
+  .page-footer__map-iframe {
+    margin-top: 0;
   }
 }

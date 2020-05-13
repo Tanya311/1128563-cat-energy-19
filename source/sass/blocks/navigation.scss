@@ -94,7 +94,6 @@
   }
 
   .navigation__list {
-    margin-left: auto;
     display: flex;
     justify-content: flex-end;
     border: none;
@@ -106,6 +105,7 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 35px;
+    letter-spacing: -0.5px;
   }
 
   .navigation__item:last-child {
@@ -117,8 +117,7 @@
   }
 
   .navigation__link {
-    font-size: 17px;
-    letter-spacing: normal;
+    font-size: 18px;
     padding-bottom: 10px;
 
     &--active {
@@ -134,10 +133,12 @@
 
   .navigation__list {
     flex-grow: 1;
+    padding-top: 14px;
   }
 
   .navigation__link {
     font-size: 19px;
+    letter-spacing: 0;
 
     &--bg-green {
       text-decoration: none;

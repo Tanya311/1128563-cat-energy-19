@@ -24,6 +24,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin: 0;
 
@@ -55,8 +57,10 @@
   .stats__name {
     font-size: 14px;
     background-color: $bg-primary;
-    width: 127px;
     bottom: -5px;
+    padding-left: 8px;
+    padding-right: 9px;
+    white-space: nowrap;
   }
 }
 
