@@ -50,7 +50,7 @@
 
     cursor: pointer;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 25px;
@@ -58,9 +58,17 @@
       top: 0;
       right: 0;
     }
+
+    &:focus {
+      outline: 2px solid #68b738;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
-  .navigation--closed .navigation__toggle::before {
+  .navigation--closed .navigation__toggle::after {
     background-image: url("../img/icon-mobile-menu.svg");
   }
 
@@ -68,7 +76,7 @@
     display: none;
   }
 
-  .navigation--opened .navigation__toggle::before {
+  .navigation--opened .navigation__toggle::after {
     background: url("../img/icon-close.svg") no-repeat;
   }
 
@@ -76,7 +84,7 @@
     display: block;
   }
 
-  .navigation--nojs .navigation__toggle::before {
+  .navigation--nojs .navigation__toggle::after {
     display: none;
   }
 

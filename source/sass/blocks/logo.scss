@@ -11,6 +11,19 @@
   text-align: left;
   padding-bottom: 13px;
   z-index: 9999;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid #68b738;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,19 +38,6 @@
     padding: 0;
     margin: 0;
     margin-right: auto;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:focus {
-      outline: 2px solid #68b738;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
   }
 
   .logo__image {
