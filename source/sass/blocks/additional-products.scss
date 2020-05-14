@@ -1,7 +1,7 @@
 .additional-products {
   width: auto;
   text-align: left;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 51.5%;
+    top: 17px;
     left: 0;
     height: 3px;
     background-color: #68b738;
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   .additional-products__wrapper {
@@ -73,7 +73,7 @@
 @media (min-width: $desktop-width) {
   .additional-products {
     margin-bottom: 80px;
-    margin-top: 35px;
+    margin-top: 5px;
   }
 
   .additional-products__title {
