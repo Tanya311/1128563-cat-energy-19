@@ -7,7 +7,7 @@
 .navigation__item {
   border-top: 1px solid $border-color;
   padding-top: 20px;
-  padding-bottom: 8px;
+  padding-bottom: 19px;
 }
 
 .navigation__link {
@@ -56,7 +56,7 @@
       width: 25px;
       height: 19px;
       top: 0;
-      right: 0;
+      right: -3px;
     }
 
     &:focus {
@@ -157,6 +157,7 @@
       text-transform: uppercase;
       font-weight: normal;
       font-size: 20px;
+      letter-spacing: normal;
 
       &:hover {
         opacity: 0.6;

@@ -1,12 +1,12 @@
 .promo {
   width: auto;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  64%, #ffffff 64%, #ffffff 100%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.8%, #ffffff 63.8%, #ffffff 100%);
   background-position: top center, 0 0;
   background-size: auto, auto;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.7%, #ffffff 63.7%, #ffffff 100%);
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #63a73a  0%, #63a73a  63.8%, #ffffff 63.8%, #ffffff 100%);
     background-size: 320px auto, 100% auto;
   }
 
@@ -120,7 +120,7 @@
   .promo__image {
     width: 552px;
     height: 499px;
-    top: 140px;
+    top: 144px;
     left: 50%;
     margin-left: -160px;
     z-index: 3;
