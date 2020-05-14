@@ -16,10 +16,10 @@
   position: relative;
 
   &--additional {
-    padding-top: 11px;
+    padding-top: 9px;
     padding-bottom: 11px;
-    padding-left: 48px;
-    margin-bottom: 2px;
+    padding-left: 46px;
+    margin-bottom: 5px;
   }
 
   &--program-check {
@@ -38,7 +38,7 @@
   &--program-check {
     padding-top: 24px;
     padding-bottom: 10px;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
     margin-top: 11px;
     position: relative;
   }
@@ -56,11 +56,11 @@
 
   &--comment {
     margin-top: 17px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   &--additional {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 }
 
@@ -82,6 +82,10 @@
     border: 1px solid #cdcdcd;
     top: -2px;
     left: 1px;
+  }
+
+  &--owner {
+    margin-right: 11px;
   }
 
 
@@ -149,6 +153,7 @@
 
 .form__fieldset-title {
   margin-bottom: 11px;
+  margin-left: -2px;
   font-size: 24px;
   line-height: 1em;
   color: $color-dark;
@@ -173,7 +178,7 @@
 }
 
 .form__input {
-  padding: 10px 0 9px 16px;
+  padding: 10px 0 9px 14px;
   margin-top: 3px;
   width: 100%;
   font-family: $font-primary;
@@ -223,15 +228,15 @@
 
 .form__input-icon {
   position: absolute;
-  right: 12px;
+  right: 13px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .form__comment-text {
-  padding-left: 16px;
+  padding-left: 15px;
   padding-top: 10px;
-  margin-top: 5px;
+  margin-top: 3px;
   box-sizing: border-box;
   border: 1px solid $border-color;
   width: 100%;
@@ -282,23 +287,23 @@
     @include width-block(90%);
     min-width: 748px;
     max-width: 900px;
-    margin-top: 50px;
+    margin-top: 45px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 74px;
   }
 
   .form__fieldset {
-    padding: 15px 37px 0 42px;
+    padding: 17px 37px 0 42px;
     width: 100%;
 
     &--program-check {
       border: none;
-      margin-bottom: 75px;
-      margin-top: 40px;
+      margin-bottom: 73px;
+      margin-top: 36px;
     }
 
     &--program-check::before {
@@ -313,12 +318,12 @@
     }
 
     &--comment {
-      margin-top: 48px;
+      margin-top: 47px;
       margin-bottom: 62px;
     }
 
     &--additional {
-      margin-bottom: 22px;
+      margin-bottom: 23px;
     }
   }
 
@@ -350,7 +355,7 @@
     }
 
     &--owner {
-      padding-top: 25px;
+      padding-top: 21px;
     }
 
     &--additional {
@@ -358,12 +363,12 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 0;
-      padding-top: 5px;
+      padding-top: 2px;
     }
   }
 
   .form__item {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
     display: flex;
     align-items: center;
 
@@ -371,6 +376,7 @@
       width: 45%;
       margin-bottom: 28px;
       padding-left: 55px;
+      padding-top: 11px;
       box-sizing: border-box;
     }
 
@@ -404,9 +410,14 @@
 
   .form__input {
     margin-left: 0;
-    padding: 12px 0 12px 18px;
+    margin-top: 2px;
+    padding: 10px 0 10px 17px;
     font-size: 20px;
     flex-grow: 1;
+
+    &--owner {
+      padding-left: 19px;
+    }
 
     &:active,
     &:focus {
@@ -438,7 +449,7 @@
 
   .form__comment-text {
     padding-left: 15px;
-    margin-top: 26px;
+    margin-top: 23px;
     box-sizing: border-box;
     width: 100%;
     min-height: 174px;
@@ -473,7 +484,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
   }
 
   .form__fieldset {
@@ -495,19 +506,20 @@
     }
 
     &--owner {
-      margin-top: 49px;
-      padding-top: 40px;
+      margin-top: 51px;
+      padding-top: 43px;
+      padding-left: 1px;
     }
 
     &--comment {
-      margin-top: 47px;
+      margin-top: 50px;
       margin-bottom: 64px;
       padding-top: 40px;
     }
 
     &--additional {
-      margin-bottom: 40px;
-      padding-top: 40px;
+      margin-bottom: 41px;
+      padding-top: 42px;
     }
   }
 
@@ -526,9 +538,9 @@
     justify-content: space-between;
 
     &--program-check {
-      padding-top: 25px;
-      margin-top: -21px;
-      padding-bottom: 4px;
+      padding-top: 26px;
+      margin-top: -14px;
+      padding-bottom: 11px;
       padding-left: 22px;
     }
 
@@ -539,13 +551,14 @@
   }
 
   .form__item {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
     width: 100%;
 
     &--additional {
       width: 20%;
+      padding-left: 58px;
     }
 
     &--owner {
@@ -553,10 +566,35 @@
     }
   }
 
+  .form__label {
+    font-size: 20px;
+    margin-right: 18px;
+
+    &--owner {
+      margin-right: 19px;
+    }
+
+    &--additional::before {
+      width: 40px;
+      height: 40px;
+      top: 4px;
+      left: -2px;
+    }
+  }
+
   .form__input {
     &----pet-data {
       margin-top: 0;
     }
+  }
+
+  .form__input-icon {
+    right: 20px;
+  }
+
+  .form__comment-text {
+    padding-left: 18px;
+    margin-top: 25px;
   }
 
   .form__required-fields {
