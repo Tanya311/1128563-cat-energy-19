@@ -45,4 +45,3 @@ var myMap;
     // Размещение геообъекта на карте.
     myMap.geoObjects.add(myPlacemark);
 }
-
