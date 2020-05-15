@@ -10,7 +10,9 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 
 var imagemin = require("gulp-imagemin");
+var uglify = require('gulp-uglify');
 
+const htmlmin = require('gulp-htmlmin');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 
@@ -33,6 +35,13 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest("build/js/"));
+});
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -47,7 +56,7 @@ gulp.task("images", function () {
 gulp.task("webp" , function (){
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 })
 
 gulp.task("sprite", function () {
@@ -61,6 +70,7 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
 })
 
@@ -101,5 +111,6 @@ gulp.task("refresh", function (done) {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"))
+
+gulp.task("build", gulp.series("clean", "copy", "css", "js", 'webp', "sprite", "html"))
 gulp.task("start", gulp.series("build", "server"));

@@ -1,21 +1,21 @@
 .program-selection {
-  overflow: hidden;
+  margin-top: 31px;
   text-align: left;
-  margin-top: 34px;
+  overflow: hidden;
 }
 
 .program-selection__text {
   @include width-block(320px);
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-left: 20px;
   padding-right: 70px;
+
   font-size: 14px;
   line-height: 1.29;
   color: $color-dark;
   text-transform: uppercase;
 }
-
 
 @media (min-width: $tablet-width) {
   .program-selection {
@@ -30,6 +30,7 @@
     font-size: 20px;
     padding-left: 60px;
     padding-right: 310px;
+
     line-height: 1.5;
   }
 }

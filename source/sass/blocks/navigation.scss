@@ -7,19 +7,20 @@
 .navigation__item {
   border-top: 1px solid $border-color;
   padding-top: 20px;
-  padding-bottom: 8px;
+  padding-bottom: 19px;
 }
 
 .navigation__link {
   display: block;
+
   font-size: 20px;
   text-decoration: none;
   color: $color-dark;
   text-transform: uppercase;
   font-weight: 500;
 
-
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -35,28 +36,36 @@
 
   .navigation__toggle {
     position: absolute;
+    width: 25px;
+    height: 19px;
     top: 12px;
     right: 20px;
     display: block;
-    width: 25px;
-    height: 19px;
     border: none;
     background: transparent;
     outline: none;
 
     cursor: pointer;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 25px;
       height: 19px;
       top: 0;
-      right: 0;
+      right: -3px;
+    }
+
+    &:focus {
+      outline: 2px solid #68b738;
+    }
+
+    &:hover {
+      opacity: 0.6;
     }
   }
 
-  .navigation--closed .navigation__toggle::before {
+  .navigation--closed .navigation__toggle::after {
     background-image: url("../img/icon-mobile-menu.svg");
   }
 
@@ -64,7 +73,7 @@
     display: none;
   }
 
-  .navigation--opened .navigation__toggle::before {
+  .navigation--opened .navigation__toggle::after {
     background: url("../img/icon-close.svg") no-repeat;
   }
 
@@ -72,7 +81,7 @@
     display: block;
   }
 
-  .navigation--nojs .navigation__toggle::before {
+  .navigation--nojs .navigation__toggle::after {
     display: none;
   }
 
@@ -83,10 +92,11 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
   }
 
   .navigation__toggle {
@@ -94,18 +104,24 @@
   }
 
   .navigation__list {
-    margin-left: auto;
     display: flex;
-    justify-content: flex-end;
-    border: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
     padding-top: 10px;
+    margin-left: 30px;
+
+    border: none;
   }
 
   .navigation__item {
-    border: none;
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 35px;
+
+    border: none;
+
+    letter-spacing: -0.5px;
   }
 
   .navigation__item:last-child {
@@ -117,9 +133,12 @@
   }
 
   .navigation__link {
-    font-size: 17px;
-    letter-spacing: normal;
+    font-size: 18px;
     padding-bottom: 10px;
+
+    &:focus {
+      outline: 2px solid #68b738;
+    }
 
     &--active {
       border-bottom: 2px solid #68b738;
@@ -133,11 +152,12 @@
   }
 
   .navigation__list {
-    flex-grow: 1;
+    max-width: 590px;
+    padding-top: 14px;
   }
 
   .navigation__link {
-    font-size: 19px;
+    font-size: 20px;
 
     &--bg-green {
       text-decoration: none;
@@ -145,9 +165,14 @@
       text-transform: uppercase;
       font-weight: normal;
       font-size: 20px;
+      letter-spacing: normal;
 
       &:hover {
         opacity: 0.6;
+      }
+
+      &:focus {
+        outline: 2px solid #ffffff;
       }
 
       &:active {

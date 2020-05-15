@@ -4,7 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Pixel Glass -->
+    <style>
+
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 89.75%;
+        background-position: 50% 0;
+        /* Mobile layout by default */
+        background-image: url("../img/cat-energy-index-mobile-menu.png");
+      }
+      /* Tablet */
+      @media (min-width: 768px) {
+        HTML {
+          /* Tablet layout */
+
+          background-image: url("../img/cat-energy-index-tablet.png");
+        }
+      }
+      /* Desktop */
+      @media (min-width: 1300px) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("../img/cat-energy-index-desktop.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
@@ -50,7 +80,7 @@
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
 
             <source media="(min-width: 1300px)"
-              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"  width="552" height="449">
+              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" srcset="img/index-can-mobile@2x.png" alt="Банка питания Кэт энерджи со вкусом курицы">
@@ -75,7 +105,7 @@
             Заработать авторитет среди дворовых котов и&nbsp;даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="program__catalog" href="catalog--set.html">Каталог pro</a>
+          <a class="program__catalog" href="catalog-set.html">Каталог pro</a>
         </article>
       </section>
 
@@ -141,17 +171,17 @@
                 srcset="img/after-mobile@2x.png 2x" alt="Фото кота Бориса">
             </picture>
             <div class="example__slider">
-              <span class="example__slider-label example__slider-label--before" tabindex="0">Было</span>
+              <span class="example__slider-label example__slider-label--before" tabindex ="0">Было</span>
               <div class="example__range-controls">
-                <div class="example__range-scale">
+                <div class="example__range-scale" tabindex ="0">
                   <span class="visually-hidden">тумблер</span>
                 </div>
               </div>
-              <span class="example__slider-label example__slider-labe--after" tabindex="0">Стало</span>
+              <span class="example__slider-label example__slider-label--after" tabindex ="0">Стало</span>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -164,7 +194,8 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871608575!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557846609725!5m2!1sru!2sru" width="320" height="362"></iframe>
+
+        <div class="page-footer__map-iframe" id="map"></div>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -211,25 +242,12 @@
     </footer>
     <script src="js/svg4everybody.legacy.min.js"></script>
     <script>
-      if (location.hash === '') {
-        svg4everybody();
-      } else if (location.hash === '#fill') {
-        svg4everybody({
-          polyfill: true
-        });
-      } else if (location.hash === '#oldie') {
-        svg4everybody({
-          nosvg: true,
-          polyfill: true
-        });
-      }
-      function addSVG(node, href) {
-        node.innerHTML ='<' + 'svg role="presentation"' + '><' + 'use xlink:href="' + href + '"/' + '><' + '/svg' + '>';
-        node.parentNode.replaceChild(node.lastChild, node);
-      }
+      svg4everybody();
     </script>
     <script src="js/picturefill.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>

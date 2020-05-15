@@ -3,16 +3,19 @@
 }
 
 .copyright__text {
-  font-family: $font-secondary;
   margin: 0;
+
+  font-family: $font-secondary;
   color: $color-grey;
 }
 
 .copyright__link {
-  margin-right: -6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-right: -6px;
+
   text-decoration: none;
 }
 
@@ -25,6 +28,9 @@
   fill: #68b738;
 }
 
+.copyright__link:focus {
+  outline-color: #68b738;
+}
 
 .copyright__link:active .copyright__text,
 .copyright__link:active svg {
@@ -34,20 +40,22 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
   }
 
   .copyright__text {
-    font-family: $font-secondary;
-    margin-top: 0;
+    margin-top: -5px;
     margin-bottom: 0;
     margin-right: 16px;
+
+    font-family: $font-secondary;
   }
 
   .copyright__link path {

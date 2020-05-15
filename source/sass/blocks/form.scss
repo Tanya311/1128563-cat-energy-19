@@ -10,16 +10,18 @@
 }
 
 .form__item {
-  margin-bottom: 11px;
   display: flex;
   align-items: center;
+
+  margin-bottom: 11px;
+
   position: relative;
 
   &--additional {
-    padding-top: 11px;
+    padding-top: 9px;
     padding-bottom: 11px;
-    padding-left: 48px;
-    margin-bottom: 2px;
+    padding-left: 46px;
+    margin-bottom: 5px;
   }
 
   &--program-check {
@@ -32,13 +34,13 @@
 
 .form__fieldset {
   margin: 0;
-  border: none;
   padding: 20px 20px 0;
+  border: none;
 
   &--program-check {
     padding-top: 24px;
     padding-bottom: 10px;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
     margin-top: 11px;
     position: relative;
   }
@@ -46,60 +48,71 @@
   &--program-check::before {
     content: "";
     position: absolute;
-    top: 0;
-    height: 100%;
-
     width: 150vw;
+    height: 100%;
+    top: 0;
     margin-left: -50vw;
     border: 1px solid $border-color;
   }
 
   &--comment {
     margin-top: 17px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   &--additional {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 }
 
 .form__label {
+  margin-right: 15px;
+
   font-size: 16px;
   line-height: 1.13em;
   color: $color-base;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-right: 15px;
+
+  cursor: pointer;
 
   &--program-check::before {
     content: "";
     position: absolute;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
     top: -2px;
     left: 1px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
   }
+
+  &--owner {
+    margin-right: 11px;
+  }
+
 
   &--additional::before {
     content: "";
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
-    box-sizing: border-box;
     top: 3px;
     left: 1px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
   }
 }
 
 .form__input-check {
   &:hover + .form__label--additional::before,
-  &:active + .form__label--additional::before,
-  &:focus + .form__label--additional::before {
+  &:active + .form__label--additional::before {
     border-color: #bababa;
+    cursor: pointer;
+  }
+
+  &:focus + .form__label--additional::before {
+    border: 2px solid #bababa;
   }
 
   &:active + .form__label--additional {
@@ -112,6 +125,7 @@
   &:active + .form__label--program-check::before,
   &:focus + .form__label--program-check::before {
     border-color: #bababa;
+    cursor: pointer;
   }
 
   &:active + .form__label--program-check {
@@ -126,8 +140,8 @@
   height: 12px;
   border-radius: 50%;
   background-color: #68b738;
-  top: 9px;
-  left: 12px;
+  top: 8px;
+  left: 11.5px;
 }
 
 .form__input-check:checked ~ .form__label--additional::after {
@@ -137,11 +151,12 @@
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 11px;
-  left: 9px;
+  left: 6px;
 }
 
 .form__fieldset-title {
   margin-bottom: 11px;
+  margin-left: -2px;
   font-size: 24px;
   line-height: 1em;
   color: $color-dark;
@@ -166,7 +181,7 @@
 }
 
 .form__input {
-  padding: 10px 0 9px 16px;
+  padding: 10px 0 9px 14px;
   margin-top: 3px;
   width: 100%;
   font-family: $font-primary;
@@ -177,7 +192,7 @@
   font-style: normal;
   text-align: left;
   vertical-align: middle;
-  color: $color-dark;
+  color: $color-grey;
   text-transform: uppercase;
   letter-spacing: normal;
 
@@ -191,8 +206,9 @@
 
   &:active,
   &:focus {
-    border: 1px solid #444444;
+    border: 2px solid #444444;
     outline: none;
+    padding: 9px 0 8px 15px;
   }
 
   &:active ~ .form__input-icon {
@@ -204,7 +220,8 @@
   }
 
   &:invalid {
-    border: 1px solid #ff8282;
+    border: 2px solid #ff8282;
+    padding: 9px 0 8px 15px;
   }
 
   &:invalid ~ .form__input-icon {
@@ -214,22 +231,48 @@
 
 .form__input-icon {
   position: absolute;
-  right: 12px;
+  right: 13px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .form__comment-text {
-  padding-left: 16px;
-  padding-top: 10px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  border: 1px solid $border-color;
   width: 100%;
   min-height: 150px;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-top: 3px;
+
   font-size: 16px;
   font-family: $font-primary;
+  color: $color-grey;
   text-transform: uppercase;
+
+  box-sizing: border-box;
+  border: 1px solid $border-color;
+
+  resize: none;
+  overflow: auto;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    padding-left: 15px;
+    padding-top: 9px;
+
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    padding-left: 15px;
+    padding-top: 9px;
+
+    border: 2px solid #ff8282;
+  }
 }
 
 .form__input::placeholder,
@@ -240,6 +283,7 @@
 
 .form__required-fields {
   margin-top: 20px;
+
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 1.14;
@@ -250,25 +294,26 @@
 @media (min-width: $tablet-width) {
   .form {
     @include width-block(90%);
-    min-width: 748px;
-    max-width: 900px;
-    margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 80px;
+
+    min-width: 748px;
+    max-width: 900px;
+    margin-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 74px;
   }
 
   .form__fieldset {
-    padding: 15px 37px 0 42px;
+    padding: 17px 37px 0 42px;
     width: 100%;
 
     &--program-check {
       border: none;
-      margin-bottom: 75px;
-      margin-top: 40px;
+      margin-bottom: 73px;
+      margin-top: 36px;
     }
 
     &--program-check::before {
@@ -283,64 +328,68 @@
     }
 
     &--comment {
-      margin-top: 48px;
+      margin-top: 47px;
       margin-bottom: 62px;
     }
 
     &--additional {
-      margin-bottom: 22px;
+      margin-bottom: 23px;
     }
   }
 
   .form__fieldset-title {
-    margin-left: -41px;
-    font-size: 36px;
     padding-left: 37px;
     padding-right: 43px;
     margin-bottom: 35px;
+    margin-left: -41px;
 
+    font-size: 36px;
 
     &--owner {
       width: auto;
     }
 
     &::after {
+      width: 150vw;
       top: 22px;
       left: -50vw;
-      width: 150vw;
     }
   }
 
   .form__list {
     &--program-check {
-      border: 1px solid $border-color;
       padding-left: 18px;
       padding-top: 26px;
       padding-bottom: 10px;
+
+      border: 1px solid $border-color;
     }
 
     &--owner {
-      padding-top: 25px;
+      padding-top: 21px;
     }
 
     &--additional {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
       margin-top: 0;
-      padding-top: 5px;
+      padding-top: 2px;
     }
   }
 
   .form__item {
-    margin-bottom: 18px;
     display: flex;
     align-items: center;
+
+    margin-bottom: 19px;
 
     &--additional {
       width: 45%;
       margin-bottom: 28px;
       padding-left: 55px;
+      padding-top: 11px;
       box-sizing: border-box;
     }
 
@@ -373,18 +422,34 @@
   }
 
   .form__input {
-    margin-left: 0;
-    padding: 12px 0 12px 18px;
-
     flex-grow: 1;
+
+    margin-left: 0;
+    margin-top: 2px;
+    padding: 10px 0 10px 17px;
+
+    font-size: 20px;
+
+    &--owner {
+      padding-left: 19px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 11px 0 11px 17px;
+    }
+
+    &:invalid {
+      padding: 11px 0 11px 17px;
+    }
   }
 
   .form__input-radio:checked ~ .form__label--program-check::after {
     content: "";
     width: 18px;
     height: 18px;
-    top: 9px;
-    left: 17px;
+    top: 10px;
+    left: 19.5px;
   }
 
   .form__input-check:checked ~ .form__label--additional::after {
@@ -398,12 +463,23 @@
   }
 
   .form__comment-text {
-    padding-left: 15px;
-    margin-top: 26px;
-    box-sizing: border-box;
     width: 100%;
     min-height: 174px;
+    padding-left: 15px;
+    margin-top: 23px;
+
     font-size: 20px;
+
+    box-sizing: border-box;
+
+    &:active,
+    &:focus {
+      padding-left: 14px;
+    }
+
+    &:invalid {
+      padding-left: 14px;
+    }
   }
 
   .form__input::placeholder,
@@ -412,20 +488,22 @@
   }
 
   .form__required-fields {
-    font-size: 16px;
     margin-left: 61px;
     margin-top: 15px;
+
+    font-size: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
     @include width-block(90%);
-    max-width: 1220px;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 82px;
+
+    max-width: 1220px;
+    padding: 0;
+    margin-bottom: 80px;
   }
 
   .form__fieldset {
@@ -440,47 +518,51 @@
 
     &--program-check {
       width: 47%;
-      box-sizing: border-box;
       padding-left: 0;
-      border: none;
       margin: 0 0 0 auto;
+
+      border: none;
+      box-sizing: border-box;
     }
 
     &--owner {
-      margin-top: 49px;
-      padding-top: 40px;
+      margin-top: 48px;
+      padding-top: 43px;
+      padding-left: 1px;
     }
 
     &--comment {
-      margin-top: 47px;
+      margin-top: 50px;
       margin-bottom: 64px;
       padding-top: 40px;
     }
 
     &--additional {
-      margin-bottom: 40px;
-      padding-top: 40px;
+      margin-bottom: 41px;
+      padding-top: 42px;
     }
   }
 
   .form__fieldset-title {
     margin-left: -41px;
-    font-size: 36px;
     padding-left: 39px;
     padding-right: 43px;
     margin-bottom: 10px;
+
+    font-size: 36px;
   }
 
   .form__list {
-    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    width: auto;
+
     &--program-check {
-      padding-top: 25px;
-      margin-top: -21px;
-      padding-bottom: 4px;
+      padding-top: 26px;
+      margin-top: -14px;
+      padding-bottom: 11px;
       padding-left: 22px;
     }
 
@@ -491,13 +573,15 @@
   }
 
   .form__item {
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+
+    margin-bottom: 20px;
     width: 100%;
 
     &--additional {
       width: 20%;
+      padding-left: 58px;
     }
 
     &--owner {
@@ -505,10 +589,35 @@
     }
   }
 
+  .form__label {
+    margin-right: 18px;
+    font-size: 20px;
+
+    &--owner {
+      margin-right: 19px;
+    }
+
+    &--additional::before {
+      width: 40px;
+      height: 40px;
+      top: 4px;
+      left: -2px;
+    }
+  }
+
   .form__input {
-    &----pet-data {
+    &--pet-data {
       margin-top: 0;
     }
+  }
+
+  .form__input-icon {
+    right: 20px;
+  }
+
+  .form__comment-text {
+    padding-left: 18px;
+    margin-top: 25px;
   }
 
   .form__required-fields {

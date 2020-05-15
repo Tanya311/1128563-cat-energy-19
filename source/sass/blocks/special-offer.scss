@@ -1,9 +1,10 @@
 .special-offer {
-  margin: 40px auto 0;
   width: 100%;
-  padding: 190px 50px 40px 50px;
-  box-sizing: border-box;
+  margin: 38px auto 0;
+  padding: 188px 50px 40px 50px;
+
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -17,6 +18,7 @@
 
 .special-offer__description {
   margin: 0;
+
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 1.25;
@@ -26,11 +28,11 @@
   &::before {
     content: "";
     position: absolute;
+    width: 56px;
+    height: 61px;
     top: 65px;
     left: 50%;
     transform: translateX(-50%);
-    width: 56px;
-    height: 61px;
     background-image: url("../img/icon-gift.svg");
   }
 }
@@ -38,6 +40,8 @@
 @media (min-width: $tablet-width) {
   .special-offer {
     width: 100%;
+    padding: 75px 12px 67px 424px;
+    margin-top: 67px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -45,8 +49,6 @@
     }
 
     background-size: cover;
-    padding: 75px 12px 67px 424px;
-    margin-top: 69px;
   }
 
   .special-offer__description {
@@ -62,18 +64,19 @@
 
 @media (min-width: $desktop-width) {
   .special-offer {
+    justify-content: center;
+    align-items: flex-end;
+
     width: 245px;
+    padding: 188px 40px 43px 40px;
     margin: 0;
+
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
-
-    justify-content: center;
-    align-items: flex-end;
-    padding: 190px 40px 43px 40px;
   }
 
   .special-offer__description {

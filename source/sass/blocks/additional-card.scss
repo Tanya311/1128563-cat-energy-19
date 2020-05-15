@@ -1,22 +1,25 @@
 .additional-card {
-  border-bottom: 1px solid $border-color;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   padding-top: 12px;
+
+  border-bottom: 1px solid $border-color;
 }
 
 .additional-card__title {
+  margin-bottom: 8px;
+  margin-top: 0;
+
   font-size: 16px;
   font-weight: normal;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 8px;
-  margin-top: 0;
 }
 
 .additional-card__details {
   width: 280px;
-  border-spacing: 0;
   margin-bottom: 12px;
+
+  border-spacing: 0;
 }
 
 .additional-card__quantity,
@@ -36,6 +39,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
     padding: 22px 34px 28px 39px;
   }
 
@@ -68,10 +72,11 @@
 
 @media (min-width: $desktop-width) {
   .additional-card {
-    padding: 15px 0 15px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
+
+    padding: 15px 0 16px;
   }
 
   .additional-card__title {
@@ -80,12 +85,14 @@
   }
 
   .additional-card__details {
-    padding-top: 10px;
-    border-spacing: 0;
-    margin-bottom: 0;
     width: 298px;
+    padding-top: 10px;
     margin-right: 27px;
     margin-left: 143px;
+    margin-bottom: 0;
+
+    border-spacing: 0;
+
     vertical-align: bottom;
   }
 
