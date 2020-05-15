@@ -2,15 +2,17 @@
   display: inline-block;
   width: 280px;
   padding: 10px 0 10px;
+
   text-decoration: none;
   font-size: 16px;
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
+  font-family: $font-primary;
+
   background-color: #68b738;
   border: none;
   z-index: 2;
-  font-family: $font-primary;
   cursor: pointer;
 
   &:hover,
@@ -24,8 +26,8 @@
   }
 
   &--promo {
-    font-size: 14px;
     padding: 12px 0 11px;
+    font-size: 14px;
     z-index: 2;
   }
 
@@ -51,12 +53,11 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .button {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     font-size: 16px;
 
     &--promo {

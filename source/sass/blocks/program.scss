@@ -4,22 +4,24 @@
   padding-right: 20px;
 }
 
-
 .program__weight {
   margin-top: 20px;
-  padding: 35px 20px 20px;
-  background-color: $bg-secondary;
+  padding: 35px 16px 20px 20px;
+
   text-align: left;
+
+  background-color: $bg-secondary;
   position: relative;
 }
 
 .program__title {
-  text-transform: uppercase;
-  font-size: 24px;
   margin-left: 72px;
   margin-top: 0;
-  font-weight: normal;
   margin-bottom: 33px;
+
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
 
   &::before {
     content: "";
@@ -40,18 +42,20 @@
 }
 
 .program__title--loss::after {
-  left: 30px;
-  top: 24px;
   width: 35px;
   height: 49px;
+  left: 30px;
+  top: 24px;
+
   background-image: url("../img/icon-cat-slim.svg");
 }
 
 .program__title--set::after {
-  left: 13px;
-  top: 37px;
   width: 67px;
   height: 28px;
+  left: 13px;
+  top: 37px;
+
   background-image: url("../img/icon-cat-pro.svg");
 }
 
@@ -59,10 +63,12 @@
   padding-bottom: 22px;
   padding-right: 15px;
   margin-bottom: 17px;
+
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 1.29em;
   color: $color-grey;
+
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -75,10 +81,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
-    left: 95px;
     width: 25px;
     height: 12px;
+    top: 7px;
+    left: 95px;
+
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -118,6 +125,7 @@
     margin-bottom: 30px;
     padding: 72px 280px 58px 52px;
     min-height: 313px;
+
     box-sizing: border-box;
 
     &--set {
@@ -132,35 +140,37 @@
 
     &::before {
       content: "";
+      width: 200px;
+      height: 200px;
       top: 91px;
       left: auto;
       right: 62px;
-      width: 200px;
-      height: 200px;
     }
   }
 
   .program__title--loss::after {
+    width: 141px;
+    height: 194px;
     top: 80px;
     left: auto;
     right: 92px;
-    width: 141px;
-    height: 194px;
   }
 
   .program__title--set::after {
+    width: 268px;
+    height: 113px;
     top: 135px;
     left: auto;
     right: 28px;
-    width: 268px;
-    height: 113px;
   }
 
   .program__description {
-    font-size: 16px;
-    line-height: 1.5;
     margin-bottom: 55px;
     padding: 0 0 0 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+
     border: none;
   }
 
@@ -174,7 +184,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .program {
     @include width-block(90%);
@@ -187,7 +196,7 @@
   .program__weight {
     width: 47%;
     max-width: 570px;
-    padding: 70px 56px 55px 52px;
+    padding: 70px 54px 55px 52px;
 
     &--set {
       margin-left: 80px;
@@ -199,28 +208,28 @@
     margin-left: 164px;
 
     &::before {
+      width: 100px;
+      height: 100px;
       right: auto;
       left: 50px;
       top: 46px;
-      width: 100px;
-      height: 100px;
     }
   }
 
   .program__title--loss::after {
+    width: 71px;
+    height: 96px;
     right: auto;
     left: 65px;
     top: 40px;
-    width: 71px;
-    height: 96px;
   }
 
   .program__title--set::after {
+    width: 134px;
+    height: 57px;
     right: auto;
     left: 32px;
     top: 66px;
-    width: 134px;
-    height: 57px;
   }
 
   .program__description {

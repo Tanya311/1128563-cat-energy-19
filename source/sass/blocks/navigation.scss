@@ -12,19 +12,16 @@
 
 .navigation__link {
   display: block;
+
   font-size: 20px;
   text-decoration: none;
   color: $color-dark;
   text-transform: uppercase;
   font-weight: 500;
 
-
-  &:hover {
-    opacity: 0.6;
-  }
-
+  &:hover,
   &:focus {
-    outline: 2px solid #68b738;
+    opacity: 0.6;
   }
 
   &:active {
@@ -39,11 +36,11 @@
 
   .navigation__toggle {
     position: absolute;
+    width: 25px;
+    height: 19px;
     top: 12px;
     right: 20px;
     display: block;
-    width: 25px;
-    height: 19px;
     border: none;
     background: transparent;
     outline: none;
@@ -95,10 +92,11 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
   }
 
   .navigation__toggle {
@@ -107,16 +105,22 @@
 
   .navigation__list {
     display: flex;
-    justify-content: flex-end;
-    border: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
     padding-top: 10px;
+    margin-left: 30px;
+
+    border: none;
   }
 
   .navigation__item {
-    border: none;
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 35px;
+
+    border: none;
+
     letter-spacing: -0.5px;
   }
 
@@ -132,6 +136,10 @@
     font-size: 18px;
     padding-bottom: 10px;
 
+    &:focus {
+      outline: 2px solid #68b738;
+    }
+
     &--active {
       border-bottom: 2px solid #68b738;
     }
@@ -144,7 +152,7 @@
   }
 
   .navigation__list {
-    flex-grow: 1;
+    max-width: 590px;
     padding-top: 14px;
   }
 

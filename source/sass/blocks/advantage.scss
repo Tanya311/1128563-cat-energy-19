@@ -1,12 +1,14 @@
 .advantage {
   @include width-block(320px);
   padding: 25px 20px 0;
+
   text-align: left;
 }
 
 .advantage__title {
   margin-top: 0;
   margin-bottom: 34px;
+
   font-size: 36px;
   font-weight: normal;
   color: $color-dark;
@@ -18,23 +20,25 @@
 }
 
 .advantage__item {
+  width: 255px;
   padding: 4px 15px 5px 40px;
   margin-bottom: 18px;
+
   font-family: $font-secondary;
   font-size: 14px;
   color: $color-grey;
-  position: relative;
+
   box-sizing: border-box;
-  width: 255px;
+
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -40px;
-
     width: 60px;
     height: 60px;
+    top: 0;
+    left: -40px;
     background-color: #68b738;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,13 +78,13 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .advantage {
     width: auto;
-    border-bottom: 1px solid $border-color;
     padding: 14px 0 0;
     margin-bottom: 619px;
+
+    border-bottom: 1px solid $border-color;
   }
 
   .advantage__title {
@@ -89,28 +93,31 @@
     max-width: 900px;
     padding: 0 20px;
     margin-bottom: 38px;
+
     font-size: 60px;
     line-height: 1;
   }
 
   .advantage__list {
     @include width-block(90%);
-    min-width: 748px;
-    max-width: 900px;
-    padding: 32px 20px 57px;
     display: flex;
     flex-wrap: wrap;
 
+    min-width: 748px;
+    max-width: 900px;
+    padding: 32px 20px 57px;
     margin-bottom: 0;
   }
 
   .advantage__item {
+    width: 40%;
+    padding: 115px 37px 48px 0;
+    margin-bottom: 0;
+
     font-size: 16px;
     line-height: 1.4;
-    padding: 115px 38px 48px 0;
-    width: 40%;
+
     position: relative;
-    margin-bottom: 0;
 
     &::before {
       position: absolute;
@@ -122,14 +129,14 @@
 
     &::after {
       content: "";
-      font-family: $font-primary;
-      font-size: 281px;
-      color: #f2f2f2;
       position: absolute;
       width: 71px;
       height: 288px;
       left: 116px;
       top: -92px;
+      font-family: $font-primary;
+      font-size: 281px;
+      color: #f2f2f2;
       z-index: -1;
     }
 
@@ -168,6 +175,7 @@
   .advantage {
     padding: 45px 0 0 0;
     margin-bottom: 150px;
+
     border-bottom: none;
   }
 
@@ -180,17 +188,20 @@
 
   .advantage__list {
     @include width-block(90%);
-    max-width: 1220px;
     justify-content: space-between;
-    border: none;
+
+    max-width: 1220px;
     padding: 5px 0 63px;
+
+    border: none;
   }
 
   .advantage__item {
+    width: 246px;
     padding: 117px 0 48px 0;
-    width: 20.1%;
     margin-bottom: 0;
     margin-right: 10px;
+
     line-height: 1.5;
 
     &::after {

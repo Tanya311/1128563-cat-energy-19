@@ -1,7 +1,7 @@
 .stats {
-  position: relative;
   width: 124px;
   text-align: center;
+  position: relative;
 }
 
 .stats:first-child {
@@ -9,10 +9,10 @@
 }
 
 .stats__value {
+  margin: 0;
   padding: 13px 13px 17px 13px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-  margin: 0;
 
   font-size: 24px;
   line-height: 1em;
@@ -26,16 +26,15 @@
   bottom: -15px;
   padding-left: 15px;
   padding-right: 15px;
-
   margin: 0;
 
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 1em;
   color: $color-grey;
+
   background-color: $bg-secondary;
 }
-
 
 @media (min-width: $tablet-width) {
   .stats {
@@ -48,18 +47,20 @@
 
   .stats__value {
     padding: 16px 31px 25px 30px;
-    border-radius: 4px;
     margin: 0;
 
     font-size: 30px;
+
+    border-radius: 4px;
   }
 
   .stats__name {
-    font-size: 14px;
-    background-color: $bg-primary;
     bottom: -5px;
     padding-left: 8px;
     padding-right: 9px;
+
+    font-size: 14px;
+    background-color: $bg-primary;
     white-space: nowrap;
   }
 }
