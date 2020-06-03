@@ -236,7 +236,7 @@
 
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
-    position: relative;
+    position: absolute;
 
     &::before {
       content: "";
@@ -333,27 +333,18 @@
     height: 520px;
     margin-top: 0;
     top: -192px;
+    display: block;
 
     position: absolute;
 
     &--before {
       left: -83px;
-      clip: auto;
+      clip: rect(0, 696px, auto, auto);
     }
 
     &--after {
       right: -39px;
-      clip: auto;
-    }
-
-    &--before-clip {
-      clip: rect(0, 368px, auto, auto);
-      display: block;
-    }
-
-    &--after-clip {
-      clip: rect(0, auto, auto, 372px);
-      display: block;
+      clip: rect(0, auto, auto, 696px);
     }
   }
 
